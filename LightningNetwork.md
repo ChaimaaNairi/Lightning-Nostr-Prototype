@@ -35,14 +35,10 @@ The Lightning Network Prototype repository aims to provide a hands-on guide to u
    btcctl --simnet --rpcuser=username --rpcpass=password generate <number_of_blocks>
    ```
 
-4. **Initialize Lightning Node:**
-   - Use Lightning Network software **LND** to initialize a Lightning node.
-   - Connect the Lightning node to our Bitcoin node's Simnet. 
-   ```bash
-   `lnd --bitcoin.simnet`
-   ```
+### Initialize Lightning Nodes
 
-### Setting Up Lightning Network Nodes
+Use Lightning Network software **LND** to initialize Lightning nodes for Alice, Bob, and Charlie respectively on your local machine. Ensure that each node is started with unique port configurations to avoid conflicts.
+
 To set up Lightning Network nodes for Alice, Bob, and Charlie, follow these steps:
 
 1. **Starting lnd (Alice’s node):**
@@ -66,8 +62,6 @@ charlie$ lnd --rpclisten=localhost:10003 --listen=localhost:10013 --restlisten=l
 
 
 These commands initialize Lightning nodes for Alice, Bob, and Charlie respectively on your local machine. Ensure that each node is started with unique port configurations to avoid conflicts.
-
-
 
 
 
