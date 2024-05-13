@@ -41,7 +41,7 @@ Use Lightning Network software **LND** to initialize Lightning nodes for Alice, 
 
 To set up Lightning Network nodes for Alice, Bob, and Charlie, follow these steps:
 
-1. **Starting lnd (Alice’s node):**
+1.**Starting lnd (Alice’s node):**
    - Run the following command for Alice's node:
 
    ```bash
@@ -64,5 +64,12 @@ charlie$ lnd --rpclisten=localhost:10003 --listen=localhost:10013 --restlisten=l
 These commands initialize Lightning nodes for Alice, Bob, and Charlie respectively on your local machine. Ensure that each node is started with unique port configurations to avoid conflicts.
 
 
+### Setting Up Lightning Network
 
-
+1. **Create Payment Channels:**
+   - Open payment channels with other Lightning nodes to establish off-chain payment channels.
+   - These channels allow for instant and low-cost transactions without touching the main blockchain.
+   
+   ```bash
+   lncli openchannel --node_key=<peer_pubkey> --local_amt=<local_amount>
+   ```
