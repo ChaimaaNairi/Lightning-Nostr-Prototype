@@ -1,60 +1,19 @@
-2024-05-08 15:01:47.558 [WRN] LTND: open C:\Users\Hp\AppData\Local\Lnd\lnd.conf: Le fichier spécifié est introuvable.
-2024-05-08 15:01:47.571 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
-2024-05-08 15:01:47.571 [INF] LTND: Version: 0.17.99-beta commit=tlv/v1.2.4-124-g7af195768, build=production, logging=default, debuglevel=info
-2024-05-08 15:01:47.571 [INF] LTND: Active chain: Bitcoin (network=simnet)
-2024-05-08 15:01:47.571 [INF] RPCS: RPC server listening on 127.0.0.1:10001
-2024-05-08 15:01:47.572 [INF] RPCS: gRPC proxy started at 127.0.0.1:8001
-2024-05-08 15:01:47.572 [INF] LTND: Opening the main database, this might take a few minutes...
-2024-05-08 15:01:47.572 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
-2024-05-08 15:01:47.575 [INF] LTND: Creating local graph and channel state DB instances
-2024-05-08 15:01:47.584 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
-2024-05-08 15:01:47.584 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
-2024-05-08 15:01:47.584 [INF] LTND: Database(s) now open (time_to_open=12.143ms)!
-2024-05-08 15:01:47.584 [INF] LTND: We're not running within systemd or the service type is not 'notify'
-2024-05-08 15:01:47.584 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
-2024-05-08 15:06:07.678 [INF] LTND: Received interrupt
-2024-05-08 15:06:07.678 [INF] LTND: Shutting down...
-2024-05-08 15:06:07.679 [INF] LTND: Gracefully shutting down.
-2024-05-08 15:06:07.679 [ERR] LTND: unable to set up wallet password listeners: shutting down
-2024-05-08 15:06:07.679 [ERR] LTND: Shutting down because error in main method: error creating wallet config: unable to set up wallet password listeners: shutting down
-2024-05-08 15:06:07.680 [INF] LTND: Shutdown complete
-
-2024-05-08 15:06:22.664 [WRN] LTND: open C:\Users\Hp\AppData\Local\Lnd\lnd.conf: Le fichier spécifié est introuvable.
-2024-05-08 15:06:22.677 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
-2024-05-08 15:06:22.677 [INF] LTND: Version: 0.17.99-beta commit=tlv/v1.2.4-124-g7af195768, build=production, logging=default, debuglevel=info
-2024-05-08 15:06:22.677 [INF] LTND: Active chain: Bitcoin (network=simnet)
-2024-05-08 15:06:22.677 [INF] RPCS: RPC server listening on 127.0.0.1:10001
-2024-05-08 15:06:22.677 [INF] RPCS: gRPC proxy started at 127.0.0.1:8001
-2024-05-08 15:06:22.677 [INF] LTND: Opening the main database, this might take a few minutes...
-2024-05-08 15:06:22.677 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
-2024-05-08 15:06:22.683 [INF] LTND: Creating local graph and channel state DB instances
-2024-05-08 15:06:22.690 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
-2024-05-08 15:06:22.690 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
-2024-05-08 15:06:22.690 [INF] LTND: Database(s) now open (time_to_open=12.6996ms)!
-2024-05-08 15:06:22.690 [INF] LTND: We're not running within systemd or the service type is not 'notify'
-2024-05-08 15:06:22.690 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
-2024-05-08 15:08:23.294 [INF] LNWL: Opened wallet
-2024-05-08 15:08:23.294 [INF] LTND: Wallet recovery mode enabled with address lookahead of 2500 addresses
-2024-05-08 15:08:24.108 [INF] LNWL: The wallet has been unlocked without a time limit
-2024-05-08 15:08:24.148 [INF] CHRE: LightningWallet opened
-2024-05-08 15:08:24.158 [INF] LNWL: RECOVERY MODE ENABLED -- rescanning for used addresses with recovery_window=2500
-2024-05-08 15:08:24.159 [INF] HSWC: Cleaning circuits from disk for closed channels
-2024-05-08 15:08:24.159 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
-2024-05-08 15:08:24.159 [INF] HSWC: Restoring in-memory circuit state from disk
-2024-05-08 15:08:24.166 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
-2024-05-08 15:08:24.170 [INF] LNWL: Started rescan from block 683e86bd5c6d110d91b94b97137ba6bfe02dbbdb8e3dff722a669b5d69d77af6 (height 0) for 0 addresses
-2024-05-08 15:08:24.172 [INF] LNWL: Catching up block hashes to height 0, this might take a while
-2024-05-08 15:08:24.173 [INF] LNWL: Done catching up block hashes
-2024-05-08 15:08:24.173 [INF] LNWL: Finished rescan for 0 addresses (synced to block 683e86bd5c6d110d91b94b97137ba6bfe02dbbdb8e3dff722a669b5d69d77af6, height 0)
-2024-05-08 15:08:24.187 [INF] SWPR: Migrating UTXO nursery finalized TXIDs
-2024-05-08 15:08:24.190 [INF] LTND: Channel backup proxy channel notifier starting
-2024-05-08 15:08:24.191 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
-2024-05-08 15:08:24.191 [INF] RRPC: Making macaroons for Router RPC Server at: data\chain\bitcoin\simnet\router.macaroon
-2024-05-08 15:08:24.194 [INF] LTND: We're not running within systemd or the service type is not 'notify'
-2024-05-08 15:08:24.195 [INF] LTND: Waiting for chain backend to finish sync, start_height=0
-2024-05-08 16:26:59.939 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
-2024-05-08 16:27:13.942 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
-2024-05-08 16:40:58.712 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
-2024-05-08 16:49:46.372 [INF] LTND: Received interrupt
-2024-05-08 16:49:46.373 [INF] LTND: Shutting down...
-2024-05-08 16:49:46.374 [INF] LTND: Gracefully shutting down.
+2024-05-14 20:04:58.640 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
+2024-05-14 20:04:58.653 [INF] LTND: Version: 0.18.0-beta.rc2 commit=tlv/v1.2.6, build=production, logging=default, debuglevel=info
+2024-05-14 20:04:58.654 [INF] LTND: Active chain: Bitcoin (network=simnet)
+2024-05-14 20:04:58.655 [INF] RPCS: RPC server listening on 127.0.0.1:10001
+2024-05-14 20:04:58.658 [INF] RPCS: gRPC proxy started at 127.0.0.1:8001
+2024-05-14 20:04:58.658 [INF] LTND: Opening the main database, this might take a few minutes...
+2024-05-14 20:04:58.658 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2024-05-14 20:04:58.666 [INF] LTND: Creating local graph and channel state DB instances
+2024-05-14 20:04:58.674 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2024-05-14 20:04:58.674 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2024-05-14 20:04:58.674 [INF] LTND: Database(s) now open (time_to_open=15.3048ms)!
+2024-05-14 20:04:58.674 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-14 20:04:58.674 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2024-05-14 20:15:37.980 [INF] LTND: Received interrupt
+2024-05-14 20:15:37.980 [INF] LTND: Shutting down...
+2024-05-14 20:15:37.980 [INF] LTND: Gracefully shutting down.
+2024-05-14 20:15:37.980 [ERR] LTND: unable to set up wallet password listeners: shutting down
+2024-05-14 20:15:37.980 [ERR] LTND: Shutting down because error in main method: error creating wallet config: unable to set up wallet password listeners: shutting down
+2024-05-14 20:15:37.982 [INF] LTND: Shutdown complete

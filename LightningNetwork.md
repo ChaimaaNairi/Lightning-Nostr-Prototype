@@ -47,6 +47,9 @@ To set up Lightning Network nodes for Alice, Bob, and Charlie, follow these step
    ```bash
    alice$ lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=data --logdir=log --debuglevel=info --bitcoin.simnet --bitcoin.active --bitcoin.node=btcd --btcd.rpcuser=username --btcd.rpcpass=password 
    ```
+
+![alt text](image.png)
+
 2.**Starting lnd (Bob’s node):**
    - Run the following command for Bob's node:
 ```bash
@@ -73,3 +76,25 @@ These commands initialize Lightning nodes for Alice, Bob, and Charlie respective
    ```bash
    lncli openchannel --node_key=<peer_pubkey> --local_amt=<local_amount>
    ```
+
+2. **Perform Lightning Transactions:**
+   - Once payment channels are established, we can send and receive payments instantly through Lightning transactions.
+   - Lightning transactions occur off-chain, providing high scalability and low fees compared to on-chain transactions.
+   ```bash
+   lncli sendpayment --pay_req=<encoded_invoice>
+   ```
+### Test Lightning Transactions
+
+   - Test Lightning transactions between our Lightning node and other connected nodes on the Simnet.
+   - Monitor transaction speed, cost, and overall performance of the Lightning Network.
+   ```bash
+   lncli getinfo
+   ```
+
+## Conclusion
+
+The Lightning Network offers a promising solution to the scalability challenges faced by blockchain networks like Bitcoin. By leveraging off-chain payment channels, Lightning enables faster, cheaper, and more scalable transactions, opening up a wide range of possibilities for the future of decentralized finance and digital payments.
+
+
+
+
