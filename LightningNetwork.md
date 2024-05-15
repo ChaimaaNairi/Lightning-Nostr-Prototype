@@ -48,8 +48,6 @@ To set up Lightning Network nodes for Alice, Bob, and Charlie, follow these step
    alice$ lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=data --logdir=log --debuglevel=info --bitcoin.simnet --bitcoin.active --bitcoin.node=btcd --btcd.rpcuser=username --btcd.rpcpass=password 
    ```
 
-![alt text](image-1.png)
-
 2.**Starting lnd (Bob’s node):**
    - Run the following command for Bob's node:
 ```bash
@@ -94,7 +92,6 @@ These commands initialize Lightning nodes for Alice, Bob, and Charlie respective
 ## Conclusion
 
 The Lightning Network offers a promising solution to the scalability challenges faced by blockchain networks like Bitcoin. By leveraging off-chain payment channels, Lightning enables faster, cheaper, and more scalable transactions, opening up a wide range of possibilities for the future of decentralized finance and digital payments.
-
 
 
 
