@@ -1,0 +1,13 @@
+2024-05-15 10:17:48.901 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
+2024-05-15 10:17:48.922 [INF] LTND: Version: 0.18.0-beta.rc2 commit=tlv/v1.2.6, build=production, logging=default, debuglevel=info
+2024-05-15 10:17:48.922 [INF] LTND: Active chain: Bitcoin (network=simnet)
+2024-05-15 10:17:48.924 [INF] RPCS: RPC server listening on 127.0.0.1:10003
+2024-05-15 10:17:48.928 [INF] RPCS: gRPC proxy started at 127.0.0.1:8003
+2024-05-15 10:17:48.929 [INF] LTND: Opening the main database, this might take a few minutes...
+2024-05-15 10:17:48.930 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2024-05-15 10:17:48.938 [INF] LTND: Creating local graph and channel state DB instances
+2024-05-15 10:17:48.948 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2024-05-15 10:17:48.949 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2024-05-15 10:17:48.949 [INF] LTND: Database(s) now open (time_to_open=18.7292ms)!
+2024-05-15 10:17:48.949 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-15 10:17:48.949 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
