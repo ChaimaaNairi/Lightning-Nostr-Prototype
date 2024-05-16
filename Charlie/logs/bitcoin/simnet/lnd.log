@@ -11,3 +11,964 @@
 2024-05-15 10:17:48.949 [INF] LTND: Database(s) now open (time_to_open=18.7292ms)!
 2024-05-15 10:17:48.949 [INF] LTND: We're not running within systemd or the service type is not 'notify'
 2024-05-15 10:17:48.949 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2024-05-15 10:23:49.672 [INF] LTND: Received interrupt
+2024-05-15 10:23:49.672 [INF] LTND: Shutting down...
+2024-05-15 10:23:49.672 [INF] LTND: Gracefully shutting down.
+2024-05-15 10:23:49.673 [ERR] LTND: unable to set up wallet password listeners: shutting down
+2024-05-15 10:23:49.673 [ERR] LTND: Shutting down because error in main method: error creating wallet config: unable to set up wallet password listeners: shutting down
+2024-05-15 13:09:21.176 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
+2024-05-15 13:09:21.191 [INF] LTND: Version: 0.18.0-beta.rc2 commit=tlv/v1.2.6, build=production, logging=default, debuglevel=info
+2024-05-15 13:09:21.191 [INF] LTND: Active chain: Bitcoin (network=simnet)
+2024-05-15 13:09:21.191 [INF] RPCS: RPC server listening on 127.0.0.1:10003
+2024-05-15 13:09:21.201 [INF] RPCS: gRPC proxy started at 127.0.0.1:8003
+2024-05-15 13:09:21.202 [INF] LTND: Opening the main database, this might take a few minutes...
+2024-05-15 13:09:21.203 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2024-05-15 13:09:21.205 [INF] LTND: Creating local graph and channel state DB instances
+2024-05-15 13:09:21.213 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2024-05-15 13:09:21.213 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2024-05-15 13:09:21.213 [INF] LTND: Database(s) now open (time_to_open=10.3816ms)!
+2024-05-15 13:09:21.213 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-15 13:09:21.213 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2024-05-15 13:10:01.237 [INF] LNWL: Opened wallet
+2024-05-15 13:10:16.122 [ERR] RPCS: [/lnrpc.Lightning/GetInfo]: the RPC server is in the process of starting up, but not yet ready to accept calls
+2024-05-15 13:10:46.509 [WRN] CHRE: unable to make getdeploymentinfo request: invalid http POST response (nil), method: getdeploymentinfo, id: 2, last error=Post "https://localhost:18556": dial tcp [::1]:18556: connectex: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+2024-05-15 13:10:46.509 [ERR] LTND: unable to create partial chain control: node backend does not support taproot
+2024-05-15 13:10:46.510 [ERR] LTND: Shutting down because error in main method: error creating wallet config: unable to create partial chain control: node backend does not support taproot
+2024-05-15 13:10:46.512 [INF] LTND: Shutdown complete
+
+2024-05-15 17:08:21.973 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
+2024-05-15 17:08:21.993 [INF] LTND: Version: 0.18.0-beta.rc2 commit=tlv/v1.2.6, build=production, logging=default, debuglevel=info
+2024-05-15 17:08:21.993 [INF] LTND: Active chain: Bitcoin (network=simnet)
+2024-05-15 17:08:21.994 [INF] RPCS: RPC server listening on 127.0.0.1:10003
+2024-05-15 17:08:21.997 [INF] RPCS: gRPC proxy started at 127.0.0.1:8003
+2024-05-15 17:08:21.997 [INF] LTND: Opening the main database, this might take a few minutes...
+2024-05-15 17:08:21.997 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2024-05-15 17:08:22.018 [INF] LTND: Creating local graph and channel state DB instances
+2024-05-15 17:08:22.026 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2024-05-15 17:08:22.027 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2024-05-15 17:08:22.027 [INF] LTND: Database(s) now open (time_to_open=29.9157ms)!
+2024-05-15 17:08:22.029 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-15 17:08:22.029 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2024-05-15 17:08:28.041 [INF] LNWL: Opened wallet
+2024-05-15 17:08:28.811 [INF] LNWL: The wallet has been unlocked without a time limit
+2024-05-15 17:08:28.857 [INF] CHRE: LightningWallet opened
+2024-05-15 17:08:28.876 [INF] HSWC: Cleaning circuits from disk for closed channels
+2024-05-15 17:08:28.876 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2024-05-15 17:08:28.876 [INF] HSWC: Restoring in-memory circuit state from disk
+2024-05-15 17:08:28.879 [INF] LNWL: Started rescan from block 683e86bd5c6d110d91b94b97137ba6bfe02dbbdb8e3dff722a669b5d69d77af6 (height 0) for 0 addresses
+2024-05-15 17:08:28.880 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2024-05-15 17:08:28.880 [INF] LNWL: Catching up block hashes to height 400, this might take a while
+2024-05-15 17:08:28.895 [INF] SWPR: Migrating UTXO nursery finalized TXIDs
+2024-05-15 17:08:28.898 [INF] LTND: Channel backup proxy channel notifier starting
+2024-05-15 17:08:28.898 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2024-05-15 17:08:28.899 [INF] RRPC: Making macaroons for Router RPC Server at: data\chain\bitcoin\simnet\router.macaroon
+2024-05-15 17:08:28.901 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-15 17:08:28.901 [INF] LTND: Waiting for chain backend to finish sync, start_height=400
+2024-05-15 17:08:29.007 [INF] LNWL: Done catching up block hashes
+2024-05-15 17:08:29.007 [INF] LNWL: Finished rescan for 0 addresses (synced to block 316b99989952d24a66792f2daf23af55609e832989a9625fec8eb34ade17491e, height 400)
+2024-05-15 17:08:29.918 [INF] LTND: Chain backend is fully synced (end_height=400)!
+2024-05-15 17:08:29.919 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2024-05-15 17:08:29.919 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2024-05-15 17:08:29.919 [INF] LNWL: SigPool starting
+2024-05-15 17:08:29.941 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.941 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.941 [INF] BTCN: Broadcaster now active
+2024-05-15 17:08:29.941 [INF] CHNF: ChannelNotifier starting
+2024-05-15 17:08:29.941 [INF] PRNF: PeerNotifier starting
+2024-05-15 17:08:29.941 [INF] HSWC: HtlcNotifier starting
+2024-05-15 17:08:29.941 [INF] SWPR: TxPublisher starting...
+2024-05-15 17:08:29.941 [INF] SWPR: Sweeper starting
+2024-05-15 17:08:29.941 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.941 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.941 [INF] UTXN: UTXO nursery starting
+2024-05-15 17:08:29.941 [INF] BRAR: Breach arbiter starting
+2024-05-15 17:08:29.941 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.942 [INF] FNDG: Funding manager starting
+2024-05-15 17:08:29.942 [INF] HSWC: HTLC Switch starting
+2024-05-15 17:08:29.942 [INF] BRAR: Starting contract observer, watching for breaches.
+2024-05-15 17:08:29.943 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.943 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.943 [INF] CNCT: ChainArbitrator starting with config: budget=[tolocal=0 BTC tolocalratio=0.5 anchorcpfp=0 BTC anchorcpfpratio=0.5 deadlinehtlc=0 BTC deadlinehtlcratio=0.5 nodeadlinehtlc=0 BTC nodeadlinehtlcratio=0.5]
+2024-05-15 17:08:29.943 [INF] DISC: Authenticated Gossiper starting
+2024-05-15 17:08:29.943 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.943 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.943 [INF] CRTR: Channel Router starting
+2024-05-15 17:08:29.948 [INF] CRTR: FilteredChainView starting
+2024-05-15 17:08:29.955 [INF] CRTR: Filtering chain using 0 channels active
+2024-05-15 17:08:29.955 [INF] CRTR: Prune tip for Channel Graph: height=400, hash=316b99989952d24a66792f2daf23af55609e832989a9625fec8eb34ade17491e
+2024-05-15 17:08:29.961 [INF] INVC: InvoiceRegistry starting
+2024-05-15 17:08:29.961 [INF] HSWC: Onion processor starting
+2024-05-15 17:08:29.961 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.965 [INF] NANN: Channel Status Manager starting
+2024-05-15 17:08:29.965 [INF] NTFN: New block epoch subscription
+2024-05-15 17:08:29.965 [INF] CHFT: ChannelEventStore starting
+2024-05-15 17:08:29.966 [INF] CHFT: Adding 0 channels to event store
+2024-05-15 17:08:29.966 [INF] CHBU: chanbackup.SubSwapper starting
+2024-05-15 17:08:29.973 [INF] CHBU: Updating backup file at data\chain\bitcoin\simnet\channel.backup
+2024-05-15 17:08:29.978 [INF] CHBU: Swapping old multi backup file from data\chain\bitcoin\simnet\temp-dont-use.backup to data\chain\bitcoin\simnet\channel.backup
+2024-05-15 17:08:29.980 [INF] SRVR: Auto peer bootstrapping is disabled
+2024-05-15 17:08:29.981 [INF] CMGR: Server listening on 127.0.0.1:10013
+2024-05-15 17:08:32.282 [ERR] RPCS: [/lnrpc.Lightning/GetInfo]: verification failed: signature mismatch after caveat verification
+2024-05-15 17:09:02.372 [INF] LTND: Received interrupt
+2024-05-15 17:09:02.372 [INF] LTND: Shutting down...
+2024-05-15 17:09:02.373 [INF] LTND: Gracefully shutting down.
+2024-05-15 17:09:02.373 [INF] NANN: Channel Status Manager shutting down...
+2024-05-15 17:09:02.374 [INF] HSWC: HTLC Switch shutting down...
+2024-05-15 17:09:02.376 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2024-05-15 17:09:02.376 [INF] HSWC: Onion processor shutting down...
+2024-05-15 17:09:02.376 [INF] HSWC: Decaying hash log received shutdown request
+2024-05-15 17:09:02.376 [INF] NTFN: Cancelling epoch notification, epoch_id=11
+2024-05-15 17:09:02.377 [INF] INVC: InvoiceRegistry shutting down...
+2024-05-15 17:09:02.377 [INF] NTFN: Cancelling epoch notification, epoch_id=10
+2024-05-15 17:09:02.377 [INF] CRTR: Channel Router shutting down...
+2024-05-15 17:09:02.378 [INF] CRTR: FilteredChainView stopping
+2024-05-15 17:09:02.382 [INF] CNCT: ChainArbitrator shutting down...
+2024-05-15 17:09:02.383 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2024-05-15 17:09:02.383 [INF] FNDG: Funding manager shutting down...
+2024-05-15 17:09:02.383 [INF] BRAR: Breach arbiter shutting down...
+2024-05-15 17:09:02.383 [INF] UTXN: UTXO nursery shutting down...
+2024-05-15 17:09:02.385 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2024-05-15 17:09:02.385 [INF] DISC: Authenticated gossiper shutting down...
+2024-05-15 17:09:02.386 [INF] DISC: Authenticated Gossiper is stopping
+2024-05-15 17:09:02.386 [INF] NTFN: Cancelling epoch notification, epoch_id=9
+2024-05-15 17:09:02.386 [INF] DISC: Authenticated Gossiper stopped
+2024-05-15 17:09:02.386 [INF] SWPR: Sweeper shutting down...
+2024-05-15 17:09:02.386 [INF] NTFN: Cancelling epoch notification, epoch_id=4
+2024-05-15 17:09:02.386 [INF] SWPR: TxPublisher stopping...
+2024-05-15 17:09:02.387 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2024-05-15 17:09:02.387 [INF] CHNF: ChannelNotifier shutting down...
+2024-05-15 17:09:02.387 [INF] PRNF: PeerNotifier shutting down...
+2024-05-15 17:09:02.387 [INF] HSWC: HtlcNotifier shutting down...
+2024-05-15 17:09:02.388 [INF] CHBU: chanbackup.SubSwapper shutting down...
+2024-05-15 17:09:02.388 [INF] NTFN: btcd notifier shutting down...
+2024-05-15 17:09:02.388 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2024-05-15 17:09:02.388 [INF] NTFN: Stopping mempool notifier
+2024-05-15 17:09:02.388 [ERR] NTFN: dead epoch stream in BestBlockTracker
+2024-05-15 17:09:02.389 [INF] CHFT: ChannelEventStore shutting down...
+2024-05-15 17:09:02.392 [INF] HLCK: Health monitor shutting down...
+2024-05-15 17:09:02.392 [INF] RPCS: Stopping RPC Server
+2024-05-15 17:09:02.392 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2024-05-15 17:09:02.392 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2024-05-15 17:09:02.392 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2024-05-15 17:09:02.394 [INF] LTND: Shutdown complete
+
+2024-05-15 17:09:19.671 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
+2024-05-15 17:09:19.689 [INF] LTND: Version: 0.18.0-beta.rc2 commit=tlv/v1.2.6, build=production, logging=default, debuglevel=info
+2024-05-15 17:09:19.689 [INF] LTND: Active chain: Bitcoin (network=simnet)
+2024-05-15 17:09:19.691 [INF] RPCS: RPC server listening on 127.0.0.1:10003
+2024-05-15 17:09:19.695 [INF] RPCS: gRPC proxy started at 127.0.0.1:8003
+2024-05-15 17:09:19.696 [INF] LTND: Opening the main database, this might take a few minutes...
+2024-05-15 17:09:19.696 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2024-05-15 17:09:19.700 [INF] LTND: Creating local graph and channel state DB instances
+2024-05-15 17:09:19.709 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2024-05-15 17:09:19.709 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2024-05-15 17:09:19.709 [INF] LTND: Database(s) now open (time_to_open=13.201ms)!
+2024-05-15 17:09:19.709 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-15 17:09:19.710 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2024-05-15 17:09:27.532 [INF] LNWL: Opened wallet
+2024-05-15 17:09:28.362 [INF] LNWL: The wallet has been unlocked without a time limit
+2024-05-15 17:09:28.377 [INF] CHRE: LightningWallet opened
+2024-05-15 17:09:28.392 [INF] HSWC: Cleaning circuits from disk for closed channels
+2024-05-15 17:09:28.392 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2024-05-15 17:09:28.392 [INF] HSWC: Restoring in-memory circuit state from disk
+2024-05-15 17:09:28.393 [INF] LNWL: Started rescan from block 316b99989952d24a66792f2daf23af55609e832989a9625fec8eb34ade17491e (height 400) for 0 addresses
+2024-05-15 17:09:28.393 [INF] LNWL: Catching up block hashes to height 400, this might take a while
+2024-05-15 17:09:28.395 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2024-05-15 17:09:28.397 [INF] LNWL: Done catching up block hashes
+2024-05-15 17:09:28.397 [INF] LNWL: Finished rescan for 0 addresses (synced to block 316b99989952d24a66792f2daf23af55609e832989a9625fec8eb34ade17491e, height 400)
+2024-05-15 17:09:28.406 [INF] LTND: Channel backup proxy channel notifier starting
+2024-05-15 17:09:28.406 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2024-05-15 17:09:28.406 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-15 17:09:28.408 [INF] LTND: Waiting for chain backend to finish sync, start_height=400
+2024-05-15 17:09:28.409 [INF] LTND: Chain backend is fully synced (end_height=400)!
+2024-05-15 17:09:28.410 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2024-05-15 17:09:28.410 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2024-05-15 17:09:28.410 [INF] LNWL: SigPool starting
+2024-05-15 17:09:28.418 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.418 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.418 [INF] BTCN: Broadcaster now active
+2024-05-15 17:09:28.418 [INF] CHNF: ChannelNotifier starting
+2024-05-15 17:09:28.419 [INF] PRNF: PeerNotifier starting
+2024-05-15 17:09:28.419 [INF] HSWC: HtlcNotifier starting
+2024-05-15 17:09:28.419 [INF] SWPR: TxPublisher starting...
+2024-05-15 17:09:28.419 [INF] SWPR: Sweeper starting
+2024-05-15 17:09:28.419 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.419 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.419 [INF] UTXN: UTXO nursery starting
+2024-05-15 17:09:28.420 [INF] BRAR: Breach arbiter starting
+2024-05-15 17:09:28.420 [INF] FNDG: Funding manager starting
+2024-05-15 17:09:28.420 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.420 [INF] BRAR: Starting contract observer, watching for breaches.
+2024-05-15 17:09:28.420 [INF] HSWC: HTLC Switch starting
+2024-05-15 17:09:28.420 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.420 [INF] CNCT: ChainArbitrator starting with config: budget=[tolocal=0 BTC tolocalratio=0.5 anchorcpfp=0 BTC anchorcpfpratio=0.5 deadlinehtlc=0 BTC deadlinehtlcratio=0.5 nodeadlinehtlc=0 BTC nodeadlinehtlcratio=0.5]
+2024-05-15 17:09:28.420 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.421 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.421 [INF] DISC: Authenticated Gossiper starting
+2024-05-15 17:09:28.421 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.421 [INF] CRTR: Channel Router starting
+2024-05-15 17:09:28.421 [INF] CRTR: FilteredChainView starting
+2024-05-15 17:09:28.427 [INF] CRTR: Filtering chain using 0 channels active
+2024-05-15 17:09:28.428 [INF] CRTR: Prune tip for Channel Graph: height=400, hash=316b99989952d24a66792f2daf23af55609e832989a9625fec8eb34ade17491e
+2024-05-15 17:09:28.428 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.428 [INF] INVC: InvoiceRegistry starting
+2024-05-15 17:09:28.428 [INF] HSWC: Onion processor starting
+2024-05-15 17:09:28.434 [INF] NTFN: New block epoch subscription
+2024-05-15 17:09:28.434 [INF] NANN: Channel Status Manager starting
+2024-05-15 17:09:28.436 [INF] CHFT: ChannelEventStore starting
+2024-05-15 17:09:28.436 [INF] CHFT: Adding 0 channels to event store
+2024-05-15 17:09:28.436 [INF] CHBU: chanbackup.SubSwapper starting
+2024-05-15 17:09:28.436 [INF] CHBU: Updating backup file at data\chain\bitcoin\simnet\channel.backup
+2024-05-15 17:09:28.446 [INF] CHBU: Swapping old multi backup file from data\chain\bitcoin\simnet\temp-dont-use.backup to data\chain\bitcoin\simnet\channel.backup
+2024-05-15 17:09:28.446 [INF] CMGR: Server listening on 127.0.0.1:10013
+2024-05-15 17:09:28.446 [INF] SRVR: Auto peer bootstrapping is disabled
+2024-05-15 17:13:11.542 [INF] LNWL: Started rescan from block 316b99989952d24a66792f2daf23af55609e832989a9625fec8eb34ade17491e (height 400) for 1 address
+2024-05-15 17:13:11.544 [INF] LNWL: Catching up block hashes to height 400, this might take a while
+2024-05-15 17:13:11.546 [INF] LNWL: Done catching up block hashes
+2024-05-15 17:13:11.547 [INF] LNWL: Finished rescan for 1 address (synced to block 316b99989952d24a66792f2daf23af55609e832989a9625fec8eb34ade17491e, height 400)
+2024-05-15 17:13:35.657 [ERR] RPCS: [/lnrpc.WalletUnlocker/UnlockWallet]: wallet already unlocked, WalletUnlocker service is no longer available
+2024-05-15 17:13:44.270 [ERR] RPCS: [/lnrpc.WalletUnlocker/UnlockWallet]: wallet already unlocked, WalletUnlocker service is no longer available
+2024-05-15 17:13:56.883 [ERR] RPCS: [/lnrpc.WalletUnlocker/UnlockWallet]: wallet already unlocked, WalletUnlocker service is no longer available
+2024-05-15 17:14:54.069 [INF] CRTR: Pruning channel graph using block 2e2d8b60b0b69b09497f31aae1afd0fe3e8d712ab33b85104036fde5829ecade (height=401)
+2024-05-15 17:14:54.072 [INF] NTFN: New block: height=401, sha=2e2d8b60b0b69b09497f31aae1afd0fe3e8d712ab33b85104036fde5829ecade
+2024-05-15 17:14:54.073 [INF] UTXN: Attempting to graduate height=401: num_kids=0, num_babies=0
+2024-05-15 17:14:54.073 [INF] NTFN: New block: height=402, sha=620d3cd238dfc9dd90cc2cabb221f78296fa55d0dab4009754a6017eec3c7743
+2024-05-15 17:14:54.074 [INF] UTXN: Attempting to graduate height=402: num_kids=0, num_babies=0
+2024-05-15 17:14:54.074 [INF] NTFN: New block: height=403, sha=0285b12d8775ad4724f7cc666d60edcf406aa9c0746131e1278d3e76bc4570c1
+2024-05-15 17:14:54.075 [INF] UTXN: Attempting to graduate height=403: num_kids=0, num_babies=0
+2024-05-15 17:14:54.075 [INF] CRTR: Block 2e2d8b60b0b69b09497f31aae1afd0fe3e8d712ab33b85104036fde5829ecade (height=401) closed 0 channels
+2024-05-15 17:14:54.075 [INF] NTFN: New block: height=404, sha=4af22abd0264d0f8dbb66456baa2173e716c7937c338603275c8543be9d75e15
+2024-05-15 17:14:54.075 [INF] CRTR: Pruning channel graph using block 620d3cd238dfc9dd90cc2cabb221f78296fa55d0dab4009754a6017eec3c7743 (height=402)
+2024-05-15 17:14:54.076 [INF] UTXN: Attempting to graduate height=404: num_kids=0, num_babies=0
+2024-05-15 17:14:54.077 [INF] NTFN: New block: height=405, sha=03fe46f1fa55f9d554c72527a2f135cdda08bc7b909e91a78427cb252d2653c8
+2024-05-15 17:14:54.077 [INF] UTXN: Attempting to graduate height=405: num_kids=0, num_babies=0
+2024-05-15 17:14:54.077 [INF] NTFN: New block: height=406, sha=70ba3d0f8641e9e2578e40c18d7d8be63218a329dadde9c499674435926f88c3
+2024-05-15 17:14:54.078 [INF] UTXN: Attempting to graduate height=406: num_kids=0, num_babies=0
+2024-05-15 17:14:54.078 [INF] NTFN: New block: height=407, sha=596b98facbd16ba6a830f26df3a12a6bb5bb4d3e1905d95d767a29e303bdaa93
+2024-05-15 17:14:54.079 [INF] UTXN: Attempting to graduate height=407: num_kids=0, num_babies=0
+2024-05-15 17:14:54.079 [INF] NTFN: New block: height=408, sha=3427898c24a04ec6b32db448c1e5f2f8f4a16f86d08d50f39cc7146dd3b1b5df
+2024-05-15 17:14:54.080 [INF] UTXN: Attempting to graduate height=408: num_kids=0, num_babies=0
+2024-05-15 17:14:54.081 [INF] NTFN: New block: height=409, sha=145792aad21d84091a333f946d2ff219cc1f651ab6ba47155244a76340ed036f
+2024-05-15 17:14:54.081 [INF] UTXN: Attempting to graduate height=409: num_kids=0, num_babies=0
+2024-05-15 17:14:54.081 [INF] CRTR: Block 620d3cd238dfc9dd90cc2cabb221f78296fa55d0dab4009754a6017eec3c7743 (height=402) closed 0 channels
+2024-05-15 17:14:54.081 [INF] CRTR: Pruning channel graph using block 0285b12d8775ad4724f7cc666d60edcf406aa9c0746131e1278d3e76bc4570c1 (height=403)
+2024-05-15 17:14:54.082 [INF] NTFN: New block: height=410, sha=733047d67b9254d3eb97ea26d1cf743828f568891acbe867aedd0ee21ad1f51a
+2024-05-15 17:14:54.082 [INF] UTXN: Attempting to graduate height=410: num_kids=0, num_babies=0
+2024-05-15 17:14:54.082 [INF] NTFN: New block: height=411, sha=4d292789e020bad5f2d2db3bba675349385cabb42d3a9039507dad46495bc46f
+2024-05-15 17:14:54.083 [INF] UTXN: Attempting to graduate height=411: num_kids=0, num_babies=0
+2024-05-15 17:14:54.084 [INF] NTFN: New block: height=412, sha=70a4f9ff86d481f7e7276eb95a4f1f5a1da25d00f5466b859ff65ef5d979bf52
+2024-05-15 17:14:54.084 [INF] UTXN: Attempting to graduate height=412: num_kids=0, num_babies=0
+2024-05-15 17:14:54.085 [INF] NTFN: New block: height=413, sha=3b28d06510503f5976137a40fbb06e41c010537d6299038bec5a1b1608516c06
+2024-05-15 17:14:54.085 [INF] UTXN: Attempting to graduate height=413: num_kids=0, num_babies=0
+2024-05-15 17:14:54.085 [INF] NTFN: New block: height=414, sha=5b3b4d284561d786f5d2c25c2894069b5bf829f412b953944148a5e82abaf06f
+2024-05-15 17:14:54.086 [INF] UTXN: Attempting to graduate height=414: num_kids=0, num_babies=0
+2024-05-15 17:14:54.087 [INF] NTFN: New block: height=415, sha=54a24ce390e6abe6ff415e0d33a2a836b8ba848ef962a50d0d0e84d896c870b3
+2024-05-15 17:14:54.087 [INF] UTXN: Attempting to graduate height=415: num_kids=0, num_babies=0
+2024-05-15 17:14:54.087 [INF] CRTR: Block 0285b12d8775ad4724f7cc666d60edcf406aa9c0746131e1278d3e76bc4570c1 (height=403) closed 0 channels
+2024-05-15 17:14:54.087 [INF] CRTR: Pruning channel graph using block 4af22abd0264d0f8dbb66456baa2173e716c7937c338603275c8543be9d75e15 (height=404)
+2024-05-15 17:14:54.087 [INF] NTFN: New block: height=416, sha=075f5166d1e247f61ec28f7550ed0a72375c838151a7251441c43e684caea703
+2024-05-15 17:14:54.088 [INF] UTXN: Attempting to graduate height=416: num_kids=0, num_babies=0
+2024-05-15 17:14:54.088 [INF] NTFN: New block: height=417, sha=477c0cd2026ac268bd4469f3d8bf9a24f2119247c5b418feb9bba815679ef7e1
+2024-05-15 17:14:54.089 [INF] UTXN: Attempting to graduate height=417: num_kids=0, num_babies=0
+2024-05-15 17:14:54.090 [INF] NTFN: New block: height=418, sha=52012574340090b643f3b2d386341f263e9f0ce3dbcde654e140287523c71024
+2024-05-15 17:14:54.090 [INF] UTXN: Attempting to graduate height=418: num_kids=0, num_babies=0
+2024-05-15 17:14:54.091 [INF] NTFN: New block: height=419, sha=72643555c2955ca3f2b61286ffeef884f2b5824b4fa7b247957af0c530e6812f
+2024-05-15 17:14:54.091 [INF] UTXN: Attempting to graduate height=419: num_kids=0, num_babies=0
+2024-05-15 17:14:54.092 [INF] NTFN: New block: height=420, sha=52ca539242d4fb2ec8b10ad5f3da37a6540a93ba7f74d67f05c42060108de34e
+2024-05-15 17:14:54.092 [INF] UTXN: Attempting to graduate height=420: num_kids=0, num_babies=0
+2024-05-15 17:14:54.093 [INF] NTFN: New block: height=421, sha=257224f8547779b3dd909e2c826001a8ef0fb0475db5e36904ab2dfc18219605
+2024-05-15 17:14:54.093 [INF] CRTR: Block 4af22abd0264d0f8dbb66456baa2173e716c7937c338603275c8543be9d75e15 (height=404) closed 0 channels
+2024-05-15 17:14:54.093 [INF] UTXN: Attempting to graduate height=421: num_kids=0, num_babies=0
+2024-05-15 17:14:54.093 [INF] CRTR: Pruning channel graph using block 03fe46f1fa55f9d554c72527a2f135cdda08bc7b909e91a78427cb252d2653c8 (height=405)
+2024-05-15 17:14:54.093 [INF] NTFN: New block: height=422, sha=64ae2183c335b59af6934e2399b8ac476cfad9cd6ad1390897a7e84f831c8d60
+2024-05-15 17:14:54.094 [INF] UTXN: Attempting to graduate height=422: num_kids=0, num_babies=0
+2024-05-15 17:14:54.094 [INF] NTFN: New block: height=423, sha=65c9e4ef1d5dd4ed1714768b69dcb58055d1506da078ef18414ecca4cc162cad
+2024-05-15 17:14:54.094 [INF] UTXN: Attempting to graduate height=423: num_kids=0, num_babies=0
+2024-05-15 17:14:54.095 [INF] NTFN: New block: height=424, sha=61faa37fd24d8f19c234d2d875c1635e338409812e5eb8b65a30e9ffe8531108
+2024-05-15 17:14:54.095 [INF] UTXN: Attempting to graduate height=424: num_kids=0, num_babies=0
+2024-05-15 17:14:54.095 [INF] NTFN: New block: height=425, sha=6e6214510cbba5321d9548fc07537f807219a55337d3add4a03e647fc016f2c1
+2024-05-15 17:14:54.096 [INF] UTXN: Attempting to graduate height=425: num_kids=0, num_babies=0
+2024-05-15 17:14:54.096 [INF] NTFN: New block: height=426, sha=4d450a00010fa72aa0944b27955198846c93be22b72b3705d64bbf67be68992f
+2024-05-15 17:14:54.096 [INF] UTXN: Attempting to graduate height=426: num_kids=0, num_babies=0
+2024-05-15 17:14:54.097 [INF] NTFN: New block: height=427, sha=11860e736e2bd9558f547af842edf5334283ea118b5bebf5d84fdda56c168156
+2024-05-15 17:14:54.098 [INF] UTXN: Attempting to graduate height=427: num_kids=0, num_babies=0
+2024-05-15 17:14:54.099 [INF] CRTR: Block 03fe46f1fa55f9d554c72527a2f135cdda08bc7b909e91a78427cb252d2653c8 (height=405) closed 0 channels
+2024-05-15 17:14:54.099 [INF] CRTR: Pruning channel graph using block 70ba3d0f8641e9e2578e40c18d7d8be63218a329dadde9c499674435926f88c3 (height=406)
+2024-05-15 17:14:54.099 [INF] NTFN: New block: height=428, sha=30db4920a64573af598a05031380f11fd3e03d27de73fd4d41f2889d85b93546
+2024-05-15 17:14:54.100 [INF] UTXN: Attempting to graduate height=428: num_kids=0, num_babies=0
+2024-05-15 17:14:54.100 [INF] NTFN: New block: height=429, sha=221ee07b80ef2b46827abdd60b8e72b7839dfd690ab37c73645d4a7cb404347c
+2024-05-15 17:14:54.101 [INF] UTXN: Attempting to graduate height=429: num_kids=0, num_babies=0
+2024-05-15 17:14:54.102 [INF] NTFN: New block: height=430, sha=70ad5ba9b783d814eaa74e9d763999f3ee2fb149a2f878058f7db0986ee9a56b
+2024-05-15 17:14:54.102 [INF] UTXN: Attempting to graduate height=430: num_kids=0, num_babies=0
+2024-05-15 17:14:54.103 [INF] NTFN: New block: height=431, sha=0e524404cba80d6c6ba66a536b662b2fa37ab71fa281ed8087e80c4c2272899c
+2024-05-15 17:14:54.103 [INF] UTXN: Attempting to graduate height=431: num_kids=0, num_babies=0
+2024-05-15 17:14:54.104 [INF] NTFN: New block: height=432, sha=54294980cd260cb98b3de172750e779031467cb814a448d8ff0fe558c8e7fb72
+2024-05-15 17:14:54.104 [INF] UTXN: Attempting to graduate height=432: num_kids=0, num_babies=0
+2024-05-15 17:14:54.105 [INF] CRTR: Block 70ba3d0f8641e9e2578e40c18d7d8be63218a329dadde9c499674435926f88c3 (height=406) closed 0 channels
+2024-05-15 17:14:54.106 [INF] CRTR: Pruning channel graph using block 596b98facbd16ba6a830f26df3a12a6bb5bb4d3e1905d95d767a29e303bdaa93 (height=407)
+2024-05-15 17:14:54.107 [INF] NTFN: New block: height=433, sha=120559c3099f1082489cf15986267081c67505aaa3216239a364b86edc2134b4
+2024-05-15 17:14:54.109 [INF] UTXN: Attempting to graduate height=433: num_kids=0, num_babies=0
+2024-05-15 17:14:54.109 [INF] NTFN: New block: height=434, sha=2d7c96ee53be07ff2a0e49ea9c582172db5c31663b28a2ea5e674467d26c02ea
+2024-05-15 17:14:54.110 [INF] UTXN: Attempting to graduate height=434: num_kids=0, num_babies=0
+2024-05-15 17:14:54.112 [INF] NTFN: New block: height=435, sha=4b71297e45690486e15de08e56c475fcff4bf046d9f87a2dcb950de69cf65db3
+2024-05-15 17:14:54.112 [INF] UTXN: Attempting to graduate height=435: num_kids=0, num_babies=0
+2024-05-15 17:14:54.113 [INF] NTFN: New block: height=436, sha=51e225bd370d3be63335b6fccd069eb9197e624e9e6d258f3d30419b8b67c4e2
+2024-05-15 17:14:54.113 [INF] CRTR: Block 596b98facbd16ba6a830f26df3a12a6bb5bb4d3e1905d95d767a29e303bdaa93 (height=407) closed 0 channels
+2024-05-15 17:14:54.113 [INF] UTXN: Attempting to graduate height=436: num_kids=0, num_babies=0
+2024-05-15 17:14:54.113 [INF] CRTR: Pruning channel graph using block 3427898c24a04ec6b32db448c1e5f2f8f4a16f86d08d50f39cc7146dd3b1b5df (height=408)
+2024-05-15 17:14:54.113 [INF] NTFN: New block: height=437, sha=07fdbd02c59f05c163e3b0de6aa0a394e22370a84a7728976fd2e11e1c55fa86
+2024-05-15 17:14:54.113 [INF] UTXN: Attempting to graduate height=437: num_kids=0, num_babies=0
+2024-05-15 17:14:54.114 [INF] NTFN: New block: height=438, sha=46e1a9bf62132011b677d0d896b4331ccac4d4a199d37925ec64a787378b98a9
+2024-05-15 17:14:54.114 [INF] UTXN: Attempting to graduate height=438: num_kids=0, num_babies=0
+2024-05-15 17:14:54.115 [INF] NTFN: New block: height=439, sha=5913ad53b648eb1a7b6507eae9a3ca653a6698f9fc8dcdd23bdeb06225f00017
+2024-05-15 17:14:54.115 [INF] UTXN: Attempting to graduate height=439: num_kids=0, num_babies=0
+2024-05-15 17:14:54.116 [INF] NTFN: New block: height=440, sha=321185263d85dc4f4971b460d9d141c4c16d1d61555827e995c51e1ce297f53d
+2024-05-15 17:14:54.116 [INF] UTXN: Attempting to graduate height=440: num_kids=0, num_babies=0
+2024-05-15 17:14:54.117 [INF] NTFN: New block: height=441, sha=5a61c38f17b703c21c5f77683e38baab5123d55284aceaba1913242ee9ca3df4
+2024-05-15 17:14:54.117 [INF] UTXN: Attempting to graduate height=441: num_kids=0, num_babies=0
+2024-05-15 17:14:54.118 [INF] NTFN: New block: height=442, sha=654129c89dc9cb92fc4248c0e66aecacca40605a3d29e5b241c926367d34f2ef
+2024-05-15 17:14:54.119 [INF] UTXN: Attempting to graduate height=442: num_kids=0, num_babies=0
+2024-05-15 17:14:54.119 [INF] CRTR: Block 3427898c24a04ec6b32db448c1e5f2f8f4a16f86d08d50f39cc7146dd3b1b5df (height=408) closed 0 channels
+2024-05-15 17:14:54.119 [INF] CRTR: Pruning channel graph using block 145792aad21d84091a333f946d2ff219cc1f651ab6ba47155244a76340ed036f (height=409)
+2024-05-15 17:14:54.119 [INF] NTFN: New block: height=443, sha=05e7756263cf8699636ee701a7f3683e0b4965fd73b7848f9640fb34d3b4f140
+2024-05-15 17:14:54.119 [INF] UTXN: Attempting to graduate height=443: num_kids=0, num_babies=0
+2024-05-15 17:14:54.120 [INF] NTFN: New block: height=444, sha=0593a47db86f30e675109f6667d5254c2266ce974e554703d2577f68ee53b0e4
+2024-05-15 17:14:54.120 [INF] UTXN: Attempting to graduate height=444: num_kids=0, num_babies=0
+2024-05-15 17:14:54.121 [INF] NTFN: New block: height=445, sha=062964541a63c8b7dc830e45a221b8f21bdfd09f8843416e127240dc68f2900b
+2024-05-15 17:14:54.122 [INF] UTXN: Attempting to graduate height=445: num_kids=0, num_babies=0
+2024-05-15 17:14:54.122 [INF] NTFN: New block: height=446, sha=3988cebc643c3c896e70086d22a3c32c11e289a579a0a46953197788274992a1
+2024-05-15 17:14:54.122 [INF] UTXN: Attempting to graduate height=446: num_kids=0, num_babies=0
+2024-05-15 17:14:54.123 [INF] NTFN: New block: height=447, sha=09e2c2d41f7d035f49c618770e75e1afb28a6eda2066d1a0451f2f8fc0bc24d5
+2024-05-15 17:14:54.124 [INF] UTXN: Attempting to graduate height=447: num_kids=0, num_babies=0
+2024-05-15 17:14:54.124 [INF] NTFN: New block: height=448, sha=29ee86f139869bce95bca11c9943b4297009fb04683b0cb462c8a4f9a17a6a1b
+2024-05-15 17:14:54.125 [INF] CRTR: Block 145792aad21d84091a333f946d2ff219cc1f651ab6ba47155244a76340ed036f (height=409) closed 0 channels
+2024-05-15 17:14:54.125 [INF] UTXN: Attempting to graduate height=448: num_kids=0, num_babies=0
+2024-05-15 17:14:54.125 [INF] CRTR: Pruning channel graph using block 733047d67b9254d3eb97ea26d1cf743828f568891acbe867aedd0ee21ad1f51a (height=410)
+2024-05-15 17:14:54.125 [INF] NTFN: New block: height=449, sha=7cb1c68cf5f6824847e85776772deba8ae472799e257d8a6a7b34240e51b9efb
+2024-05-15 17:14:54.125 [INF] UTXN: Attempting to graduate height=449: num_kids=0, num_babies=0
+2024-05-15 17:14:54.126 [INF] NTFN: New block: height=450, sha=654ef7049f9f0ec6caedba94c5168baad29a3a21a2c58e20d17bfead714a37ad
+2024-05-15 17:14:54.126 [INF] UTXN: Attempting to graduate height=450: num_kids=0, num_babies=0
+2024-05-15 17:14:54.127 [INF] NTFN: New block: height=451, sha=511ad782bd1893daa3d938b26d2c41a29c8d622d9ea92bcfa29e0508d19a75d0
+2024-05-15 17:14:54.127 [INF] UTXN: Attempting to graduate height=451: num_kids=0, num_babies=0
+2024-05-15 17:14:54.128 [INF] NTFN: New block: height=452, sha=0098ee13a17ac7d208e74fa5f36b5436572a3fc44dd8fcbcf9d9d3759888fe8d
+2024-05-15 17:14:54.128 [INF] UTXN: Attempting to graduate height=452: num_kids=0, num_babies=0
+2024-05-15 17:14:54.129 [INF] NTFN: New block: height=453, sha=3b91f06c0932aa8b02e0acacbc7181bb4460f4fee2bf301d8fd0bf323801bb92
+2024-05-15 17:14:54.130 [INF] UTXN: Attempting to graduate height=453: num_kids=0, num_babies=0
+2024-05-15 17:14:54.130 [INF] NTFN: New block: height=454, sha=19943877405d6b04272e55a3d308106dc323e77fd36a228811c89013badea16b
+2024-05-15 17:14:54.130 [INF] CRTR: Block 733047d67b9254d3eb97ea26d1cf743828f568891acbe867aedd0ee21ad1f51a (height=410) closed 0 channels
+2024-05-15 17:14:54.131 [INF] CRTR: Pruning channel graph using block 4d292789e020bad5f2d2db3bba675349385cabb42d3a9039507dad46495bc46f (height=411)
+2024-05-15 17:14:54.130 [INF] UTXN: Attempting to graduate height=454: num_kids=0, num_babies=0
+2024-05-15 17:14:54.131 [INF] NTFN: New block: height=455, sha=0796032aba7ff74033328b660dccd666bd0fcb62d29dcba19564efe8acd9906a
+2024-05-15 17:14:54.132 [INF] UTXN: Attempting to graduate height=455: num_kids=0, num_babies=0
+2024-05-15 17:14:54.133 [INF] NTFN: New block: height=456, sha=6dd53fbc533e2a706c6187acbce439c88bfe37715a49a315fc1a90a3a0dedd18
+2024-05-15 17:14:54.134 [INF] UTXN: Attempting to graduate height=456: num_kids=0, num_babies=0
+2024-05-15 17:14:54.134 [INF] NTFN: New block: height=457, sha=3c81d7eb58131f9a4accffdd3f0ca3439fd294bf5d112ed4f4952be98195dfa1
+2024-05-15 17:14:54.135 [INF] UTXN: Attempting to graduate height=457: num_kids=0, num_babies=0
+2024-05-15 17:14:54.135 [INF] NTFN: New block: height=458, sha=7c6d3edcfe70906b828b4a9ada6d5b76855c196e6deb9edc339cafb329eab8c7
+2024-05-15 17:14:54.135 [INF] UTXN: Attempting to graduate height=458: num_kids=0, num_babies=0
+2024-05-15 17:14:54.136 [INF] NTFN: New block: height=459, sha=58f8d1760d167816d7ed6057c54cbdbc98c825b477d3dd78b76b04530de96ef2
+2024-05-15 17:14:54.136 [INF] UTXN: Attempting to graduate height=459: num_kids=0, num_babies=0
+2024-05-15 17:14:54.137 [INF] CRTR: Block 4d292789e020bad5f2d2db3bba675349385cabb42d3a9039507dad46495bc46f (height=411) closed 0 channels
+2024-05-15 17:14:54.137 [INF] CRTR: Pruning channel graph using block 70a4f9ff86d481f7e7276eb95a4f1f5a1da25d00f5466b859ff65ef5d979bf52 (height=412)
+2024-05-15 17:14:54.138 [INF] NTFN: New block: height=460, sha=29e3a3a2f27f1a95b5837664f6c668f799abd1646a0e569e4bb051cd75b6c54b
+2024-05-15 17:14:54.138 [INF] UTXN: Attempting to graduate height=460: num_kids=0, num_babies=0
+2024-05-15 17:14:54.139 [INF] NTFN: New block: height=461, sha=2439bc1bdef6c58d4395acf6fd3aac2310d61315397d4104449645e53e1a35d3
+2024-05-15 17:14:54.139 [INF] UTXN: Attempting to graduate height=461: num_kids=0, num_babies=0
+2024-05-15 17:14:54.142 [INF] CRTR: Block 70a4f9ff86d481f7e7276eb95a4f1f5a1da25d00f5466b859ff65ef5d979bf52 (height=412) closed 0 channels
+2024-05-15 17:14:54.143 [INF] CRTR: Pruning channel graph using block 3b28d06510503f5976137a40fbb06e41c010537d6299038bec5a1b1608516c06 (height=413)
+2024-05-15 17:14:54.144 [INF] NTFN: New block: height=462, sha=5375e66a1351a7b812ae5e9f32677d0a3302316e92275cb2ba0675800b181f6a
+2024-05-15 17:14:54.145 [INF] UTXN: Attempting to graduate height=462: num_kids=0, num_babies=0
+2024-05-15 17:14:54.146 [INF] NTFN: New block: height=463, sha=1d7f883aac631b2422a04832d42e6fade9ffe828c882bc33451b757e1c82813f
+2024-05-15 17:14:54.146 [INF] UTXN: Attempting to graduate height=463: num_kids=0, num_babies=0
+2024-05-15 17:14:54.147 [INF] NTFN: New block: height=464, sha=4df34a8ab60b18a2861b2afd41e3303aae3f9819aec68c970790edc19f1fbf92
+2024-05-15 17:14:54.147 [INF] UTXN: Attempting to graduate height=464: num_kids=0, num_babies=0
+2024-05-15 17:14:54.148 [INF] NTFN: New block: height=465, sha=7025a08e9ad0f2047cd7f7368897858907b2616737fe66ca2ec4db0bf9ef5482
+2024-05-15 17:14:54.148 [INF] UTXN: Attempting to graduate height=465: num_kids=0, num_babies=0
+2024-05-15 17:14:54.148 [INF] CRTR: Block 3b28d06510503f5976137a40fbb06e41c010537d6299038bec5a1b1608516c06 (height=413) closed 0 channels
+2024-05-15 17:14:54.149 [INF] CRTR: Pruning channel graph using block 5b3b4d284561d786f5d2c25c2894069b5bf829f412b953944148a5e82abaf06f (height=414)
+2024-05-15 17:14:54.149 [INF] NTFN: New block: height=466, sha=16ba618d86e5f9770e3303d7cf3a65d21ef5bb1524e4512120a65306b18a1db2
+2024-05-15 17:14:54.149 [INF] UTXN: Attempting to graduate height=466: num_kids=0, num_babies=0
+2024-05-15 17:14:54.150 [INF] NTFN: New block: height=467, sha=164098d75773a83683a8b861db3ddd03e1a4ae8b35dc0b26e461ee0b42752e8b
+2024-05-15 17:14:54.150 [INF] UTXN: Attempting to graduate height=467: num_kids=0, num_babies=0
+2024-05-15 17:14:54.151 [INF] NTFN: New block: height=468, sha=059f36f0764b05f17f40f8176b097930236eb8ec88536718a64e354787114d82
+2024-05-15 17:14:54.151 [INF] UTXN: Attempting to graduate height=468: num_kids=0, num_babies=0
+2024-05-15 17:14:54.152 [INF] NTFN: New block: height=469, sha=52a6231eec02b8ac86345cd9808b69d1ad2b28c5d0779b8ab84527cd78fcae5a
+2024-05-15 17:14:54.152 [INF] UTXN: Attempting to graduate height=469: num_kids=0, num_babies=0
+2024-05-15 17:14:54.153 [INF] NTFN: New block: height=470, sha=0fc0e7118a78a20b5d4b520fd6fc14e871f932ecc6c61dcbf2ecd31e8434a910
+2024-05-15 17:14:54.153 [INF] UTXN: Attempting to graduate height=470: num_kids=0, num_babies=0
+2024-05-15 17:14:54.154 [INF] CRTR: Block 5b3b4d284561d786f5d2c25c2894069b5bf829f412b953944148a5e82abaf06f (height=414) closed 0 channels
+2024-05-15 17:14:54.155 [INF] CRTR: Pruning channel graph using block 54a24ce390e6abe6ff415e0d33a2a836b8ba848ef962a50d0d0e84d896c870b3 (height=415)
+2024-05-15 17:14:54.154 [INF] NTFN: New block: height=471, sha=27028e23261500e2aa2cdebf07517ba6f3671ff0f9d5471ee09eac258720407c
+2024-05-15 17:14:54.155 [INF] UTXN: Attempting to graduate height=471: num_kids=0, num_babies=0
+2024-05-15 17:14:54.156 [INF] NTFN: New block: height=472, sha=303a3ece5f25cc4231ab3d31ac88209c909b63da4edc3a8058dd37ebf985e86e
+2024-05-15 17:14:54.156 [INF] UTXN: Attempting to graduate height=472: num_kids=0, num_babies=0
+2024-05-15 17:14:54.157 [INF] NTFN: New block: height=473, sha=1f60284380c625814b5e536edca48e8596fdcd2ec05eec177e6f2b749e4916d3
+2024-05-15 17:14:54.157 [INF] UTXN: Attempting to graduate height=473: num_kids=0, num_babies=0
+2024-05-15 17:14:54.158 [INF] NTFN: New block: height=474, sha=1220a60cd73759a7890ac6fa33fb7ab7e60415594fa5dedab289ce5089842519
+2024-05-15 17:14:54.159 [INF] UTXN: Attempting to graduate height=474: num_kids=0, num_babies=0
+2024-05-15 17:14:54.159 [INF] NTFN: New block: height=475, sha=565e89940f157e19a2c5587eb39a84c59dc2e2b5aec3d035c9d0c9f78fc7569d
+2024-05-15 17:14:54.160 [INF] UTXN: Attempting to graduate height=475: num_kids=0, num_babies=0
+2024-05-15 17:14:54.160 [INF] CRTR: Block 54a24ce390e6abe6ff415e0d33a2a836b8ba848ef962a50d0d0e84d896c870b3 (height=415) closed 0 channels
+2024-05-15 17:14:54.160 [INF] CRTR: Pruning channel graph using block 075f5166d1e247f61ec28f7550ed0a72375c838151a7251441c43e684caea703 (height=416)
+2024-05-15 17:14:54.160 [INF] NTFN: New block: height=476, sha=0f3573da32ea0ba1db5f9bf4805b7710621b6b767c60736a1b41850bd12602ee
+2024-05-15 17:14:54.161 [INF] UTXN: Attempting to graduate height=476: num_kids=0, num_babies=0
+2024-05-15 17:14:54.161 [INF] NTFN: New block: height=477, sha=5a389f117a8f9747189da761c98750ecdd2663634d276a12afa6ee7644b881d8
+2024-05-15 17:14:54.162 [INF] UTXN: Attempting to graduate height=477: num_kids=0, num_babies=0
+2024-05-15 17:14:54.163 [INF] NTFN: New block: height=478, sha=336a3979dd046c3433129dfed239225e0808ceff6f37d340d5da90afb3f5249d
+2024-05-15 17:14:54.163 [INF] UTXN: Attempting to graduate height=478: num_kids=0, num_babies=0
+2024-05-15 17:14:54.164 [INF] NTFN: New block: height=479, sha=0491dd56076e447cfb55d05a6152ca10d71bb771bf4e97ad197a6ed392e1c97f
+2024-05-15 17:14:54.164 [INF] UTXN: Attempting to graduate height=479: num_kids=0, num_babies=0
+2024-05-15 17:14:54.165 [INF] NTFN: New block: height=480, sha=714416e0fb82b8209f3d3620cccc1e4d1bb675b0fa4174cb78ccec283c483081
+2024-05-15 17:14:54.165 [INF] UTXN: Attempting to graduate height=480: num_kids=0, num_babies=0
+2024-05-15 17:14:54.166 [INF] CRTR: Block 075f5166d1e247f61ec28f7550ed0a72375c838151a7251441c43e684caea703 (height=416) closed 0 channels
+2024-05-15 17:14:54.166 [INF] NTFN: New block: height=481, sha=61af4df01778ff569f4cf941d3fe6877e5b2b6af8bab48c84dc55d2e66e055ef
+2024-05-15 17:14:54.166 [INF] CRTR: Pruning channel graph using block 477c0cd2026ac268bd4469f3d8bf9a24f2119247c5b418feb9bba815679ef7e1 (height=417)
+2024-05-15 17:14:54.167 [INF] UTXN: Attempting to graduate height=481: num_kids=0, num_babies=0
+2024-05-15 17:14:54.167 [INF] NTFN: New block: height=482, sha=34f933ff620cc3afc81f45b72c4076a604b5827fc6d824831bfaf4654617ce4f
+2024-05-15 17:14:54.168 [INF] UTXN: Attempting to graduate height=482: num_kids=0, num_babies=0
+2024-05-15 17:14:54.169 [INF] NTFN: New block: height=483, sha=5baf86dd592e903acf2b0f8ed272a2e4dcdc758002b29978a7b0152dbcbfffd4
+2024-05-15 17:14:54.170 [INF] UTXN: Attempting to graduate height=483: num_kids=0, num_babies=0
+2024-05-15 17:14:54.170 [INF] NTFN: New block: height=484, sha=5d0e1fbc65d71277ded9b1aea26132299802c83895ca14934d460e2208ab8aa5
+2024-05-15 17:14:54.171 [INF] UTXN: Attempting to graduate height=484: num_kids=0, num_babies=0
+2024-05-15 17:14:54.171 [INF] NTFN: New block: height=485, sha=3239b9a947e545982193baa1b19682d581143b9f5f053ffb8f754120ee37a8a9
+2024-05-15 17:14:54.171 [INF] UTXN: Attempting to graduate height=485: num_kids=0, num_babies=0
+2024-05-15 17:14:54.172 [INF] CRTR: Block 477c0cd2026ac268bd4469f3d8bf9a24f2119247c5b418feb9bba815679ef7e1 (height=417) closed 0 channels
+2024-05-15 17:14:54.172 [INF] CRTR: Pruning channel graph using block 52012574340090b643f3b2d386341f263e9f0ce3dbcde654e140287523c71024 (height=418)
+2024-05-15 17:14:54.172 [INF] NTFN: New block: height=486, sha=0a2f762fb3e0ea5652170fb663594a364b5af1a72770058e58e493e8178c8b64
+2024-05-15 17:14:54.173 [INF] UTXN: Attempting to graduate height=486: num_kids=0, num_babies=0
+2024-05-15 17:14:54.174 [INF] NTFN: New block: height=487, sha=677b4f1e2b195ed6f66c50a10097a3e358a72642f7d410ba2a9fda5807b15275
+2024-05-15 17:14:54.174 [INF] UTXN: Attempting to graduate height=487: num_kids=0, num_babies=0
+2024-05-15 17:14:54.175 [INF] NTFN: New block: height=488, sha=7c1cf6a9f12fbf99e788d1d878496c565b53ef325086345ab754237115d2a6b8
+2024-05-15 17:14:54.175 [INF] UTXN: Attempting to graduate height=488: num_kids=0, num_babies=0
+2024-05-15 17:14:54.176 [INF] NTFN: New block: height=489, sha=74d3ce6a13957693bdc4c99b5adb58bc48a829af7bdea885ec351ce4536c3beb
+2024-05-15 17:14:54.176 [INF] UTXN: Attempting to graduate height=489: num_kids=0, num_babies=0
+2024-05-15 17:14:54.177 [INF] NTFN: New block: height=490, sha=2b2c2b516f5108e3d3b6b6fd5808c5be155754716cbfdbe272eb83ecd1c32da7
+2024-05-15 17:14:54.177 [INF] UTXN: Attempting to graduate height=490: num_kids=0, num_babies=0
+2024-05-15 17:14:54.178 [INF] CRTR: Block 52012574340090b643f3b2d386341f263e9f0ce3dbcde654e140287523c71024 (height=418) closed 0 channels
+2024-05-15 17:14:54.178 [INF] NTFN: New block: height=491, sha=3e03517709ede15494e578c09e4668421e72dd1a14b132c09790e1f54376d7f5
+2024-05-15 17:14:54.178 [INF] CRTR: Pruning channel graph using block 72643555c2955ca3f2b61286ffeef884f2b5824b4fa7b247957af0c530e6812f (height=419)
+2024-05-15 17:14:54.179 [INF] UTXN: Attempting to graduate height=491: num_kids=0, num_babies=0
+2024-05-15 17:14:54.179 [INF] NTFN: New block: height=492, sha=4ee043d06b0878b9cb32b78ecdc48406ca887636214412739332c517e7e9a3a1
+2024-05-15 17:14:54.179 [INF] UTXN: Attempting to graduate height=492: num_kids=0, num_babies=0
+2024-05-15 17:14:54.180 [INF] NTFN: New block: height=493, sha=67c063add6c09446da3d5b9c0cc7a20ab18c5932421775f4ff65b487d874cb06
+2024-05-15 17:14:54.180 [INF] UTXN: Attempting to graduate height=493: num_kids=0, num_babies=0
+2024-05-15 17:14:54.181 [INF] NTFN: New block: height=494, sha=3ad73730f7dbda822453e006ca57c652dfbab135df7b95d46a074346042f00ab
+2024-05-15 17:14:54.181 [INF] UTXN: Attempting to graduate height=494: num_kids=0, num_babies=0
+2024-05-15 17:14:54.182 [INF] NTFN: New block: height=495, sha=3af65b57ed9a3dc51b94eff95db43d8ea2d5fd33415ecb8b142efbf1ec735f8d
+2024-05-15 17:14:54.182 [INF] UTXN: Attempting to graduate height=495: num_kids=0, num_babies=0
+2024-05-15 17:14:54.183 [INF] NTFN: New block: height=496, sha=1c7c4e003fed83e33826e031354b13440e990ba9403a9298a39d4d25d5a46dcf
+2024-05-15 17:14:54.183 [INF] UTXN: Attempting to graduate height=496: num_kids=0, num_babies=0
+2024-05-15 17:14:54.184 [INF] NTFN: New block: height=497, sha=3c28c3d24f7be81ec528fd1343e3a177444462bd22bef724e70f0ad9f627cb21
+2024-05-15 17:14:54.184 [INF] UTXN: Attempting to graduate height=497: num_kids=0, num_babies=0
+2024-05-15 17:14:54.184 [INF] NTFN: New block: height=498, sha=235bf30d9ed592de17a04762ea3c37153f94df48a9347a5ac034edc164a162aa
+2024-05-15 17:14:54.185 [INF] UTXN: Attempting to graduate height=498: num_kids=0, num_babies=0
+2024-05-15 17:14:54.186 [INF] NTFN: New block: height=499, sha=489b7e2ac67ae134a6d47742c9795203f0fbd2b262155fde9ec51670151731d5
+2024-05-15 17:14:54.186 [INF] UTXN: Attempting to graduate height=499: num_kids=0, num_babies=0
+2024-05-15 17:14:54.187 [INF] NTFN: New block: height=500, sha=56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646
+2024-05-15 17:14:54.187 [INF] UTXN: Attempting to graduate height=500: num_kids=0, num_babies=0
+2024-05-15 17:14:54.187 [INF] CRTR: Block 72643555c2955ca3f2b61286ffeef884f2b5824b4fa7b247957af0c530e6812f (height=419) closed 0 channels
+2024-05-15 17:14:54.187 [INF] CRTR: Pruning channel graph using block 52ca539242d4fb2ec8b10ad5f3da37a6540a93ba7f74d67f05c42060108de34e (height=420)
+2024-05-15 17:14:54.192 [INF] CRTR: Block 52ca539242d4fb2ec8b10ad5f3da37a6540a93ba7f74d67f05c42060108de34e (height=420) closed 0 channels
+2024-05-15 17:14:54.192 [INF] CRTR: Pruning channel graph using block 257224f8547779b3dd909e2c826001a8ef0fb0475db5e36904ab2dfc18219605 (height=421)
+2024-05-15 17:14:54.198 [INF] CRTR: Block 257224f8547779b3dd909e2c826001a8ef0fb0475db5e36904ab2dfc18219605 (height=421) closed 0 channels
+2024-05-15 17:14:54.199 [INF] CRTR: Pruning channel graph using block 64ae2183c335b59af6934e2399b8ac476cfad9cd6ad1390897a7e84f831c8d60 (height=422)
+2024-05-15 17:14:54.204 [INF] CRTR: Block 64ae2183c335b59af6934e2399b8ac476cfad9cd6ad1390897a7e84f831c8d60 (height=422) closed 0 channels
+2024-05-15 17:14:54.205 [INF] CRTR: Pruning channel graph using block 65c9e4ef1d5dd4ed1714768b69dcb58055d1506da078ef18414ecca4cc162cad (height=423)
+2024-05-15 17:14:54.211 [INF] CRTR: Block 65c9e4ef1d5dd4ed1714768b69dcb58055d1506da078ef18414ecca4cc162cad (height=423) closed 0 channels
+2024-05-15 17:14:54.211 [INF] CRTR: Pruning channel graph using block 61faa37fd24d8f19c234d2d875c1635e338409812e5eb8b65a30e9ffe8531108 (height=424)
+2024-05-15 17:14:54.218 [INF] CRTR: Block 61faa37fd24d8f19c234d2d875c1635e338409812e5eb8b65a30e9ffe8531108 (height=424) closed 0 channels
+2024-05-15 17:14:54.218 [INF] CRTR: Pruning channel graph using block 6e6214510cbba5321d9548fc07537f807219a55337d3add4a03e647fc016f2c1 (height=425)
+2024-05-15 17:14:54.224 [INF] CRTR: Block 6e6214510cbba5321d9548fc07537f807219a55337d3add4a03e647fc016f2c1 (height=425) closed 0 channels
+2024-05-15 17:14:54.225 [INF] CRTR: Pruning channel graph using block 4d450a00010fa72aa0944b27955198846c93be22b72b3705d64bbf67be68992f (height=426)
+2024-05-15 17:14:54.230 [INF] CRTR: Block 4d450a00010fa72aa0944b27955198846c93be22b72b3705d64bbf67be68992f (height=426) closed 0 channels
+2024-05-15 17:14:54.230 [INF] CRTR: Pruning channel graph using block 11860e736e2bd9558f547af842edf5334283ea118b5bebf5d84fdda56c168156 (height=427)
+2024-05-15 17:14:54.236 [INF] CRTR: Block 11860e736e2bd9558f547af842edf5334283ea118b5bebf5d84fdda56c168156 (height=427) closed 0 channels
+2024-05-15 17:14:54.237 [INF] CRTR: Pruning channel graph using block 30db4920a64573af598a05031380f11fd3e03d27de73fd4d41f2889d85b93546 (height=428)
+2024-05-15 17:14:54.242 [INF] CRTR: Block 30db4920a64573af598a05031380f11fd3e03d27de73fd4d41f2889d85b93546 (height=428) closed 0 channels
+2024-05-15 17:14:54.242 [INF] CRTR: Pruning channel graph using block 221ee07b80ef2b46827abdd60b8e72b7839dfd690ab37c73645d4a7cb404347c (height=429)
+2024-05-15 17:14:54.248 [INF] CRTR: Block 221ee07b80ef2b46827abdd60b8e72b7839dfd690ab37c73645d4a7cb404347c (height=429) closed 0 channels
+2024-05-15 17:14:54.248 [INF] CRTR: Pruning channel graph using block 70ad5ba9b783d814eaa74e9d763999f3ee2fb149a2f878058f7db0986ee9a56b (height=430)
+2024-05-15 17:14:54.255 [INF] CRTR: Block 70ad5ba9b783d814eaa74e9d763999f3ee2fb149a2f878058f7db0986ee9a56b (height=430) closed 0 channels
+2024-05-15 17:14:54.255 [INF] CRTR: Pruning channel graph using block 0e524404cba80d6c6ba66a536b662b2fa37ab71fa281ed8087e80c4c2272899c (height=431)
+2024-05-15 17:14:54.262 [INF] CRTR: Block 0e524404cba80d6c6ba66a536b662b2fa37ab71fa281ed8087e80c4c2272899c (height=431) closed 0 channels
+2024-05-15 17:14:54.263 [INF] CRTR: Pruning channel graph using block 54294980cd260cb98b3de172750e779031467cb814a448d8ff0fe558c8e7fb72 (height=432)
+2024-05-15 17:14:54.268 [INF] CRTR: Block 54294980cd260cb98b3de172750e779031467cb814a448d8ff0fe558c8e7fb72 (height=432) closed 0 channels
+2024-05-15 17:14:54.268 [INF] CRTR: Pruning channel graph using block 120559c3099f1082489cf15986267081c67505aaa3216239a364b86edc2134b4 (height=433)
+2024-05-15 17:14:54.274 [INF] CRTR: Block 120559c3099f1082489cf15986267081c67505aaa3216239a364b86edc2134b4 (height=433) closed 0 channels
+2024-05-15 17:14:54.275 [INF] CRTR: Pruning channel graph using block 2d7c96ee53be07ff2a0e49ea9c582172db5c31663b28a2ea5e674467d26c02ea (height=434)
+2024-05-15 17:14:54.280 [INF] CRTR: Block 2d7c96ee53be07ff2a0e49ea9c582172db5c31663b28a2ea5e674467d26c02ea (height=434) closed 0 channels
+2024-05-15 17:14:54.280 [INF] CRTR: Pruning channel graph using block 4b71297e45690486e15de08e56c475fcff4bf046d9f87a2dcb950de69cf65db3 (height=435)
+2024-05-15 17:14:54.288 [INF] CRTR: Block 4b71297e45690486e15de08e56c475fcff4bf046d9f87a2dcb950de69cf65db3 (height=435) closed 0 channels
+2024-05-15 17:14:54.289 [INF] CRTR: Pruning channel graph using block 51e225bd370d3be63335b6fccd069eb9197e624e9e6d258f3d30419b8b67c4e2 (height=436)
+2024-05-15 17:14:54.294 [INF] CRTR: Block 51e225bd370d3be63335b6fccd069eb9197e624e9e6d258f3d30419b8b67c4e2 (height=436) closed 0 channels
+2024-05-15 17:14:54.294 [INF] CRTR: Pruning channel graph using block 07fdbd02c59f05c163e3b0de6aa0a394e22370a84a7728976fd2e11e1c55fa86 (height=437)
+2024-05-15 17:14:54.300 [INF] CRTR: Block 07fdbd02c59f05c163e3b0de6aa0a394e22370a84a7728976fd2e11e1c55fa86 (height=437) closed 0 channels
+2024-05-15 17:14:54.300 [INF] CRTR: Pruning channel graph using block 46e1a9bf62132011b677d0d896b4331ccac4d4a199d37925ec64a787378b98a9 (height=438)
+2024-05-15 17:14:54.307 [INF] CRTR: Block 46e1a9bf62132011b677d0d896b4331ccac4d4a199d37925ec64a787378b98a9 (height=438) closed 0 channels
+2024-05-15 17:14:54.308 [INF] CRTR: Pruning channel graph using block 5913ad53b648eb1a7b6507eae9a3ca653a6698f9fc8dcdd23bdeb06225f00017 (height=439)
+2024-05-15 17:14:54.315 [INF] CRTR: Block 5913ad53b648eb1a7b6507eae9a3ca653a6698f9fc8dcdd23bdeb06225f00017 (height=439) closed 0 channels
+2024-05-15 17:14:54.315 [INF] CRTR: Pruning channel graph using block 321185263d85dc4f4971b460d9d141c4c16d1d61555827e995c51e1ce297f53d (height=440)
+2024-05-15 17:14:54.321 [INF] CRTR: Block 321185263d85dc4f4971b460d9d141c4c16d1d61555827e995c51e1ce297f53d (height=440) closed 0 channels
+2024-05-15 17:14:54.321 [INF] CRTR: Pruning channel graph using block 5a61c38f17b703c21c5f77683e38baab5123d55284aceaba1913242ee9ca3df4 (height=441)
+2024-05-15 17:14:54.327 [INF] CRTR: Block 5a61c38f17b703c21c5f77683e38baab5123d55284aceaba1913242ee9ca3df4 (height=441) closed 0 channels
+2024-05-15 17:14:54.327 [INF] CRTR: Pruning channel graph using block 654129c89dc9cb92fc4248c0e66aecacca40605a3d29e5b241c926367d34f2ef (height=442)
+2024-05-15 17:14:54.333 [INF] CRTR: Block 654129c89dc9cb92fc4248c0e66aecacca40605a3d29e5b241c926367d34f2ef (height=442) closed 0 channels
+2024-05-15 17:14:54.334 [INF] CRTR: Pruning channel graph using block 05e7756263cf8699636ee701a7f3683e0b4965fd73b7848f9640fb34d3b4f140 (height=443)
+2024-05-15 17:14:54.339 [INF] CRTR: Block 05e7756263cf8699636ee701a7f3683e0b4965fd73b7848f9640fb34d3b4f140 (height=443) closed 0 channels
+2024-05-15 17:14:54.339 [INF] CRTR: Pruning channel graph using block 0593a47db86f30e675109f6667d5254c2266ce974e554703d2577f68ee53b0e4 (height=444)
+2024-05-15 17:14:54.346 [INF] CRTR: Block 0593a47db86f30e675109f6667d5254c2266ce974e554703d2577f68ee53b0e4 (height=444) closed 0 channels
+2024-05-15 17:14:54.346 [INF] CRTR: Pruning channel graph using block 062964541a63c8b7dc830e45a221b8f21bdfd09f8843416e127240dc68f2900b (height=445)
+2024-05-15 17:14:54.351 [INF] CRTR: Block 062964541a63c8b7dc830e45a221b8f21bdfd09f8843416e127240dc68f2900b (height=445) closed 0 channels
+2024-05-15 17:14:54.351 [INF] CRTR: Pruning channel graph using block 3988cebc643c3c896e70086d22a3c32c11e289a579a0a46953197788274992a1 (height=446)
+2024-05-15 17:14:54.358 [INF] CRTR: Block 3988cebc643c3c896e70086d22a3c32c11e289a579a0a46953197788274992a1 (height=446) closed 0 channels
+2024-05-15 17:14:54.358 [INF] CRTR: Pruning channel graph using block 09e2c2d41f7d035f49c618770e75e1afb28a6eda2066d1a0451f2f8fc0bc24d5 (height=447)
+2024-05-15 17:14:54.363 [INF] CRTR: Block 09e2c2d41f7d035f49c618770e75e1afb28a6eda2066d1a0451f2f8fc0bc24d5 (height=447) closed 0 channels
+2024-05-15 17:14:54.364 [INF] CRTR: Pruning channel graph using block 29ee86f139869bce95bca11c9943b4297009fb04683b0cb462c8a4f9a17a6a1b (height=448)
+2024-05-15 17:14:54.369 [INF] CRTR: Block 29ee86f139869bce95bca11c9943b4297009fb04683b0cb462c8a4f9a17a6a1b (height=448) closed 0 channels
+2024-05-15 17:14:54.370 [INF] CRTR: Pruning channel graph using block 7cb1c68cf5f6824847e85776772deba8ae472799e257d8a6a7b34240e51b9efb (height=449)
+2024-05-15 17:14:54.376 [INF] CRTR: Block 7cb1c68cf5f6824847e85776772deba8ae472799e257d8a6a7b34240e51b9efb (height=449) closed 0 channels
+2024-05-15 17:14:54.376 [INF] CRTR: Pruning channel graph using block 654ef7049f9f0ec6caedba94c5168baad29a3a21a2c58e20d17bfead714a37ad (height=450)
+2024-05-15 17:14:54.385 [INF] CRTR: Block 654ef7049f9f0ec6caedba94c5168baad29a3a21a2c58e20d17bfead714a37ad (height=450) closed 0 channels
+2024-05-15 17:14:54.385 [INF] CRTR: Pruning channel graph using block 511ad782bd1893daa3d938b26d2c41a29c8d622d9ea92bcfa29e0508d19a75d0 (height=451)
+2024-05-15 17:14:54.391 [INF] CRTR: Block 511ad782bd1893daa3d938b26d2c41a29c8d622d9ea92bcfa29e0508d19a75d0 (height=451) closed 0 channels
+2024-05-15 17:14:54.391 [INF] CRTR: Pruning channel graph using block 0098ee13a17ac7d208e74fa5f36b5436572a3fc44dd8fcbcf9d9d3759888fe8d (height=452)
+2024-05-15 17:14:54.397 [INF] CRTR: Block 0098ee13a17ac7d208e74fa5f36b5436572a3fc44dd8fcbcf9d9d3759888fe8d (height=452) closed 0 channels
+2024-05-15 17:14:54.397 [INF] CRTR: Pruning channel graph using block 3b91f06c0932aa8b02e0acacbc7181bb4460f4fee2bf301d8fd0bf323801bb92 (height=453)
+2024-05-15 17:14:54.402 [INF] CRTR: Block 3b91f06c0932aa8b02e0acacbc7181bb4460f4fee2bf301d8fd0bf323801bb92 (height=453) closed 0 channels
+2024-05-15 17:14:54.402 [INF] CRTR: Pruning channel graph using block 19943877405d6b04272e55a3d308106dc323e77fd36a228811c89013badea16b (height=454)
+2024-05-15 17:14:54.408 [INF] CRTR: Block 19943877405d6b04272e55a3d308106dc323e77fd36a228811c89013badea16b (height=454) closed 0 channels
+2024-05-15 17:14:54.408 [INF] CRTR: Pruning channel graph using block 0796032aba7ff74033328b660dccd666bd0fcb62d29dcba19564efe8acd9906a (height=455)
+2024-05-15 17:14:54.414 [INF] CRTR: Block 0796032aba7ff74033328b660dccd666bd0fcb62d29dcba19564efe8acd9906a (height=455) closed 0 channels
+2024-05-15 17:14:54.414 [INF] CRTR: Pruning channel graph using block 6dd53fbc533e2a706c6187acbce439c88bfe37715a49a315fc1a90a3a0dedd18 (height=456)
+2024-05-15 17:14:54.420 [INF] CRTR: Block 6dd53fbc533e2a706c6187acbce439c88bfe37715a49a315fc1a90a3a0dedd18 (height=456) closed 0 channels
+2024-05-15 17:14:54.420 [INF] CRTR: Pruning channel graph using block 3c81d7eb58131f9a4accffdd3f0ca3439fd294bf5d112ed4f4952be98195dfa1 (height=457)
+2024-05-15 17:14:54.425 [INF] CRTR: Block 3c81d7eb58131f9a4accffdd3f0ca3439fd294bf5d112ed4f4952be98195dfa1 (height=457) closed 0 channels
+2024-05-15 17:14:54.425 [INF] CRTR: Pruning channel graph using block 7c6d3edcfe70906b828b4a9ada6d5b76855c196e6deb9edc339cafb329eab8c7 (height=458)
+2024-05-15 17:14:54.431 [INF] CRTR: Block 7c6d3edcfe70906b828b4a9ada6d5b76855c196e6deb9edc339cafb329eab8c7 (height=458) closed 0 channels
+2024-05-15 17:14:54.431 [INF] CRTR: Pruning channel graph using block 58f8d1760d167816d7ed6057c54cbdbc98c825b477d3dd78b76b04530de96ef2 (height=459)
+2024-05-15 17:14:54.438 [INF] CRTR: Block 58f8d1760d167816d7ed6057c54cbdbc98c825b477d3dd78b76b04530de96ef2 (height=459) closed 0 channels
+2024-05-15 17:14:54.438 [INF] CRTR: Pruning channel graph using block 29e3a3a2f27f1a95b5837664f6c668f799abd1646a0e569e4bb051cd75b6c54b (height=460)
+2024-05-15 17:14:54.449 [INF] CRTR: Block 29e3a3a2f27f1a95b5837664f6c668f799abd1646a0e569e4bb051cd75b6c54b (height=460) closed 0 channels
+2024-05-15 17:14:54.449 [INF] CRTR: Pruning channel graph using block 2439bc1bdef6c58d4395acf6fd3aac2310d61315397d4104449645e53e1a35d3 (height=461)
+2024-05-15 17:14:54.455 [INF] CRTR: Block 2439bc1bdef6c58d4395acf6fd3aac2310d61315397d4104449645e53e1a35d3 (height=461) closed 0 channels
+2024-05-15 17:14:54.455 [INF] CRTR: Pruning channel graph using block 5375e66a1351a7b812ae5e9f32677d0a3302316e92275cb2ba0675800b181f6a (height=462)
+2024-05-15 17:14:54.460 [INF] CRTR: Block 5375e66a1351a7b812ae5e9f32677d0a3302316e92275cb2ba0675800b181f6a (height=462) closed 0 channels
+2024-05-15 17:14:54.461 [INF] CRTR: Pruning channel graph using block 1d7f883aac631b2422a04832d42e6fade9ffe828c882bc33451b757e1c82813f (height=463)
+2024-05-15 17:14:54.466 [INF] CRTR: Block 1d7f883aac631b2422a04832d42e6fade9ffe828c882bc33451b757e1c82813f (height=463) closed 0 channels
+2024-05-15 17:14:54.466 [INF] CRTR: Pruning channel graph using block 4df34a8ab60b18a2861b2afd41e3303aae3f9819aec68c970790edc19f1fbf92 (height=464)
+2024-05-15 17:14:54.472 [INF] CRTR: Block 4df34a8ab60b18a2861b2afd41e3303aae3f9819aec68c970790edc19f1fbf92 (height=464) closed 0 channels
+2024-05-15 17:14:54.472 [INF] CRTR: Pruning channel graph using block 7025a08e9ad0f2047cd7f7368897858907b2616737fe66ca2ec4db0bf9ef5482 (height=465)
+2024-05-15 17:14:54.477 [INF] CRTR: Block 7025a08e9ad0f2047cd7f7368897858907b2616737fe66ca2ec4db0bf9ef5482 (height=465) closed 0 channels
+2024-05-15 17:14:54.477 [INF] CRTR: Pruning channel graph using block 16ba618d86e5f9770e3303d7cf3a65d21ef5bb1524e4512120a65306b18a1db2 (height=466)
+2024-05-15 17:14:54.483 [INF] CRTR: Block 16ba618d86e5f9770e3303d7cf3a65d21ef5bb1524e4512120a65306b18a1db2 (height=466) closed 0 channels
+2024-05-15 17:14:54.483 [INF] CRTR: Pruning channel graph using block 164098d75773a83683a8b861db3ddd03e1a4ae8b35dc0b26e461ee0b42752e8b (height=467)
+2024-05-15 17:14:54.489 [INF] CRTR: Block 164098d75773a83683a8b861db3ddd03e1a4ae8b35dc0b26e461ee0b42752e8b (height=467) closed 0 channels
+2024-05-15 17:14:54.489 [INF] CRTR: Pruning channel graph using block 059f36f0764b05f17f40f8176b097930236eb8ec88536718a64e354787114d82 (height=468)
+2024-05-15 17:14:54.494 [INF] CRTR: Block 059f36f0764b05f17f40f8176b097930236eb8ec88536718a64e354787114d82 (height=468) closed 0 channels
+2024-05-15 17:14:54.494 [INF] CRTR: Pruning channel graph using block 52a6231eec02b8ac86345cd9808b69d1ad2b28c5d0779b8ab84527cd78fcae5a (height=469)
+2024-05-15 17:14:54.500 [INF] CRTR: Block 52a6231eec02b8ac86345cd9808b69d1ad2b28c5d0779b8ab84527cd78fcae5a (height=469) closed 0 channels
+2024-05-15 17:14:54.500 [INF] CRTR: Pruning channel graph using block 0fc0e7118a78a20b5d4b520fd6fc14e871f932ecc6c61dcbf2ecd31e8434a910 (height=470)
+2024-05-15 17:14:54.506 [INF] CRTR: Block 0fc0e7118a78a20b5d4b520fd6fc14e871f932ecc6c61dcbf2ecd31e8434a910 (height=470) closed 0 channels
+2024-05-15 17:14:54.506 [INF] CRTR: Pruning channel graph using block 27028e23261500e2aa2cdebf07517ba6f3671ff0f9d5471ee09eac258720407c (height=471)
+2024-05-15 17:14:54.512 [INF] CRTR: Block 27028e23261500e2aa2cdebf07517ba6f3671ff0f9d5471ee09eac258720407c (height=471) closed 0 channels
+2024-05-15 17:14:54.512 [INF] CRTR: Pruning channel graph using block 303a3ece5f25cc4231ab3d31ac88209c909b63da4edc3a8058dd37ebf985e86e (height=472)
+2024-05-15 17:14:54.518 [INF] CRTR: Block 303a3ece5f25cc4231ab3d31ac88209c909b63da4edc3a8058dd37ebf985e86e (height=472) closed 0 channels
+2024-05-15 17:14:54.518 [INF] CRTR: Pruning channel graph using block 1f60284380c625814b5e536edca48e8596fdcd2ec05eec177e6f2b749e4916d3 (height=473)
+2024-05-15 17:14:54.523 [INF] CRTR: Block 1f60284380c625814b5e536edca48e8596fdcd2ec05eec177e6f2b749e4916d3 (height=473) closed 0 channels
+2024-05-15 17:14:54.524 [INF] CRTR: Pruning channel graph using block 1220a60cd73759a7890ac6fa33fb7ab7e60415594fa5dedab289ce5089842519 (height=474)
+2024-05-15 17:14:54.529 [INF] CRTR: Block 1220a60cd73759a7890ac6fa33fb7ab7e60415594fa5dedab289ce5089842519 (height=474) closed 0 channels
+2024-05-15 17:14:54.529 [INF] CRTR: Pruning channel graph using block 565e89940f157e19a2c5587eb39a84c59dc2e2b5aec3d035c9d0c9f78fc7569d (height=475)
+2024-05-15 17:14:54.535 [INF] CRTR: Block 565e89940f157e19a2c5587eb39a84c59dc2e2b5aec3d035c9d0c9f78fc7569d (height=475) closed 0 channels
+2024-05-15 17:14:54.535 [INF] CRTR: Pruning channel graph using block 0f3573da32ea0ba1db5f9bf4805b7710621b6b767c60736a1b41850bd12602ee (height=476)
+2024-05-15 17:14:54.540 [INF] CRTR: Block 0f3573da32ea0ba1db5f9bf4805b7710621b6b767c60736a1b41850bd12602ee (height=476) closed 0 channels
+2024-05-15 17:14:54.541 [INF] CRTR: Pruning channel graph using block 5a389f117a8f9747189da761c98750ecdd2663634d276a12afa6ee7644b881d8 (height=477)
+2024-05-15 17:14:54.546 [INF] CRTR: Block 5a389f117a8f9747189da761c98750ecdd2663634d276a12afa6ee7644b881d8 (height=477) closed 0 channels
+2024-05-15 17:14:54.546 [INF] CRTR: Pruning channel graph using block 336a3979dd046c3433129dfed239225e0808ceff6f37d340d5da90afb3f5249d (height=478)
+2024-05-15 17:14:54.552 [INF] CRTR: Block 336a3979dd046c3433129dfed239225e0808ceff6f37d340d5da90afb3f5249d (height=478) closed 0 channels
+2024-05-15 17:14:54.552 [INF] CRTR: Pruning channel graph using block 0491dd56076e447cfb55d05a6152ca10d71bb771bf4e97ad197a6ed392e1c97f (height=479)
+2024-05-15 17:14:54.558 [INF] CRTR: Block 0491dd56076e447cfb55d05a6152ca10d71bb771bf4e97ad197a6ed392e1c97f (height=479) closed 0 channels
+2024-05-15 17:14:54.558 [INF] CRTR: Pruning channel graph using block 714416e0fb82b8209f3d3620cccc1e4d1bb675b0fa4174cb78ccec283c483081 (height=480)
+2024-05-15 17:14:54.564 [INF] CRTR: Block 714416e0fb82b8209f3d3620cccc1e4d1bb675b0fa4174cb78ccec283c483081 (height=480) closed 0 channels
+2024-05-15 17:14:54.564 [INF] CRTR: Pruning channel graph using block 61af4df01778ff569f4cf941d3fe6877e5b2b6af8bab48c84dc55d2e66e055ef (height=481)
+2024-05-15 17:14:54.570 [INF] CRTR: Block 61af4df01778ff569f4cf941d3fe6877e5b2b6af8bab48c84dc55d2e66e055ef (height=481) closed 0 channels
+2024-05-15 17:14:54.570 [INF] CRTR: Pruning channel graph using block 34f933ff620cc3afc81f45b72c4076a604b5827fc6d824831bfaf4654617ce4f (height=482)
+2024-05-15 17:14:54.576 [INF] CRTR: Block 34f933ff620cc3afc81f45b72c4076a604b5827fc6d824831bfaf4654617ce4f (height=482) closed 0 channels
+2024-05-15 17:14:54.576 [INF] CRTR: Pruning channel graph using block 5baf86dd592e903acf2b0f8ed272a2e4dcdc758002b29978a7b0152dbcbfffd4 (height=483)
+2024-05-15 17:14:54.581 [INF] CRTR: Block 5baf86dd592e903acf2b0f8ed272a2e4dcdc758002b29978a7b0152dbcbfffd4 (height=483) closed 0 channels
+2024-05-15 17:14:54.581 [INF] CRTR: Pruning channel graph using block 5d0e1fbc65d71277ded9b1aea26132299802c83895ca14934d460e2208ab8aa5 (height=484)
+2024-05-15 17:14:54.586 [INF] CRTR: Block 5d0e1fbc65d71277ded9b1aea26132299802c83895ca14934d460e2208ab8aa5 (height=484) closed 0 channels
+2024-05-15 17:14:54.587 [INF] CRTR: Pruning channel graph using block 3239b9a947e545982193baa1b19682d581143b9f5f053ffb8f754120ee37a8a9 (height=485)
+2024-05-15 17:14:54.593 [INF] CRTR: Block 3239b9a947e545982193baa1b19682d581143b9f5f053ffb8f754120ee37a8a9 (height=485) closed 0 channels
+2024-05-15 17:14:54.593 [INF] CRTR: Pruning channel graph using block 0a2f762fb3e0ea5652170fb663594a364b5af1a72770058e58e493e8178c8b64 (height=486)
+2024-05-15 17:14:54.598 [INF] CRTR: Block 0a2f762fb3e0ea5652170fb663594a364b5af1a72770058e58e493e8178c8b64 (height=486) closed 0 channels
+2024-05-15 17:14:54.598 [INF] CRTR: Pruning channel graph using block 677b4f1e2b195ed6f66c50a10097a3e358a72642f7d410ba2a9fda5807b15275 (height=487)
+2024-05-15 17:14:54.604 [INF] CRTR: Block 677b4f1e2b195ed6f66c50a10097a3e358a72642f7d410ba2a9fda5807b15275 (height=487) closed 0 channels
+2024-05-15 17:14:54.604 [INF] CRTR: Pruning channel graph using block 7c1cf6a9f12fbf99e788d1d878496c565b53ef325086345ab754237115d2a6b8 (height=488)
+2024-05-15 17:14:54.610 [INF] CRTR: Block 7c1cf6a9f12fbf99e788d1d878496c565b53ef325086345ab754237115d2a6b8 (height=488) closed 0 channels
+2024-05-15 17:14:54.610 [INF] CRTR: Pruning channel graph using block 74d3ce6a13957693bdc4c99b5adb58bc48a829af7bdea885ec351ce4536c3beb (height=489)
+2024-05-15 17:14:54.615 [INF] CRTR: Block 74d3ce6a13957693bdc4c99b5adb58bc48a829af7bdea885ec351ce4536c3beb (height=489) closed 0 channels
+2024-05-15 17:14:54.615 [INF] CRTR: Pruning channel graph using block 2b2c2b516f5108e3d3b6b6fd5808c5be155754716cbfdbe272eb83ecd1c32da7 (height=490)
+2024-05-15 17:14:54.621 [INF] CRTR: Block 2b2c2b516f5108e3d3b6b6fd5808c5be155754716cbfdbe272eb83ecd1c32da7 (height=490) closed 0 channels
+2024-05-15 17:14:54.621 [INF] CRTR: Pruning channel graph using block 3e03517709ede15494e578c09e4668421e72dd1a14b132c09790e1f54376d7f5 (height=491)
+2024-05-15 17:14:54.627 [INF] CRTR: Block 3e03517709ede15494e578c09e4668421e72dd1a14b132c09790e1f54376d7f5 (height=491) closed 0 channels
+2024-05-15 17:14:54.627 [INF] CRTR: Pruning channel graph using block 4ee043d06b0878b9cb32b78ecdc48406ca887636214412739332c517e7e9a3a1 (height=492)
+2024-05-15 17:14:54.633 [INF] CRTR: Block 4ee043d06b0878b9cb32b78ecdc48406ca887636214412739332c517e7e9a3a1 (height=492) closed 0 channels
+2024-05-15 17:14:54.633 [INF] CRTR: Pruning channel graph using block 67c063add6c09446da3d5b9c0cc7a20ab18c5932421775f4ff65b487d874cb06 (height=493)
+2024-05-15 17:14:54.638 [INF] CRTR: Block 67c063add6c09446da3d5b9c0cc7a20ab18c5932421775f4ff65b487d874cb06 (height=493) closed 0 channels
+2024-05-15 17:14:54.638 [INF] CRTR: Pruning channel graph using block 3ad73730f7dbda822453e006ca57c652dfbab135df7b95d46a074346042f00ab (height=494)
+2024-05-15 17:14:54.644 [INF] CRTR: Block 3ad73730f7dbda822453e006ca57c652dfbab135df7b95d46a074346042f00ab (height=494) closed 0 channels
+2024-05-15 17:14:54.644 [INF] CRTR: Pruning channel graph using block 3af65b57ed9a3dc51b94eff95db43d8ea2d5fd33415ecb8b142efbf1ec735f8d (height=495)
+2024-05-15 17:14:54.650 [INF] CRTR: Block 3af65b57ed9a3dc51b94eff95db43d8ea2d5fd33415ecb8b142efbf1ec735f8d (height=495) closed 0 channels
+2024-05-15 17:14:54.650 [INF] CRTR: Pruning channel graph using block 1c7c4e003fed83e33826e031354b13440e990ba9403a9298a39d4d25d5a46dcf (height=496)
+2024-05-15 17:14:54.656 [INF] CRTR: Block 1c7c4e003fed83e33826e031354b13440e990ba9403a9298a39d4d25d5a46dcf (height=496) closed 0 channels
+2024-05-15 17:14:54.656 [INF] CRTR: Pruning channel graph using block 3c28c3d24f7be81ec528fd1343e3a177444462bd22bef724e70f0ad9f627cb21 (height=497)
+2024-05-15 17:14:54.661 [INF] CRTR: Block 3c28c3d24f7be81ec528fd1343e3a177444462bd22bef724e70f0ad9f627cb21 (height=497) closed 0 channels
+2024-05-15 17:14:54.662 [INF] CRTR: Pruning channel graph using block 235bf30d9ed592de17a04762ea3c37153f94df48a9347a5ac034edc164a162aa (height=498)
+2024-05-15 17:14:54.668 [INF] CRTR: Block 235bf30d9ed592de17a04762ea3c37153f94df48a9347a5ac034edc164a162aa (height=498) closed 0 channels
+2024-05-15 17:14:54.668 [INF] CRTR: Pruning channel graph using block 489b7e2ac67ae134a6d47742c9795203f0fbd2b262155fde9ec51670151731d5 (height=499)
+2024-05-15 17:14:54.673 [INF] CRTR: Block 489b7e2ac67ae134a6d47742c9795203f0fbd2b262155fde9ec51670151731d5 (height=499) closed 0 channels
+2024-05-15 17:14:54.673 [INF] CRTR: Pruning channel graph using block 56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646 (height=500)
+2024-05-15 17:14:54.678 [INF] CRTR: Block 56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646 (height=500) closed 0 channels
+2024-05-15 17:15:15.472 [INF] LTND: Received interrupt
+2024-05-15 17:15:15.472 [INF] LTND: Shutting down...
+2024-05-15 17:15:15.473 [INF] LTND: Gracefully shutting down.
+2024-05-15 17:15:15.473 [INF] NANN: Channel Status Manager shutting down...
+2024-05-15 17:15:15.473 [INF] HSWC: HTLC Switch shutting down...
+2024-05-15 17:15:15.473 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2024-05-15 17:15:15.473 [INF] HSWC: Onion processor shutting down...
+2024-05-15 17:15:15.473 [INF] HSWC: Decaying hash log received shutdown request
+2024-05-15 17:15:15.473 [INF] NTFN: Cancelling epoch notification, epoch_id=11
+2024-05-15 17:15:15.473 [INF] INVC: InvoiceRegistry shutting down...
+2024-05-15 17:15:15.473 [INF] NTFN: Cancelling epoch notification, epoch_id=10
+2024-05-15 17:15:15.474 [INF] CRTR: Channel Router shutting down...
+2024-05-15 17:15:15.474 [INF] CRTR: FilteredChainView stopping
+2024-05-15 17:15:15.474 [INF] CNCT: ChainArbitrator shutting down...
+2024-05-15 17:15:15.475 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2024-05-15 17:15:15.475 [INF] FNDG: Funding manager shutting down...
+2024-05-15 17:15:15.475 [INF] BRAR: Breach arbiter shutting down...
+2024-05-15 17:15:15.475 [INF] UTXN: UTXO nursery shutting down...
+2024-05-15 17:15:15.475 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2024-05-15 17:15:15.475 [INF] DISC: Authenticated gossiper shutting down...
+2024-05-15 17:15:15.475 [INF] DISC: Authenticated Gossiper is stopping
+2024-05-15 17:15:15.475 [INF] NTFN: Cancelling epoch notification, epoch_id=9
+2024-05-15 17:15:15.475 [INF] DISC: Authenticated Gossiper stopped
+2024-05-15 17:15:15.475 [INF] SWPR: Sweeper shutting down...
+2024-05-15 17:15:15.475 [INF] SWPR: TxPublisher stopping...
+2024-05-15 17:15:15.475 [INF] CHNF: ChannelNotifier shutting down...
+2024-05-15 17:15:15.475 [INF] NTFN: Cancelling epoch notification, epoch_id=4
+2024-05-15 17:15:15.475 [INF] PRNF: PeerNotifier shutting down...
+2024-05-15 17:15:15.476 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2024-05-15 17:15:15.476 [INF] HSWC: HtlcNotifier shutting down...
+2024-05-15 17:15:15.476 [INF] CHBU: chanbackup.SubSwapper shutting down...
+2024-05-15 17:15:15.476 [INF] NTFN: btcd notifier shutting down...
+2024-05-15 17:15:15.476 [INF] NTFN: Stopping mempool notifier
+2024-05-15 17:15:15.476 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2024-05-15 17:15:15.476 [ERR] NTFN: dead epoch stream in BestBlockTracker
+2024-05-15 17:15:15.477 [INF] CHFT: ChannelEventStore shutting down...
+2024-05-15 17:15:15.479 [INF] HLCK: Health monitor shutting down...
+2024-05-15 17:15:15.479 [INF] RPCS: Stopping RPC Server
+2024-05-15 17:15:15.480 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2024-05-15 17:15:15.480 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2024-05-15 17:15:15.480 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2024-05-15 17:15:15.481 [INF] LTND: Shutdown complete
+
+2024-05-15 18:29:27.553 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
+2024-05-15 18:29:27.561 [INF] LTND: Version: 0.18.0-beta.rc2 commit=tlv/v1.2.6, build=production, logging=default, debuglevel=info
+2024-05-15 18:29:27.561 [INF] LTND: Active chain: Bitcoin (network=simnet)
+2024-05-15 18:29:27.570 [INF] RPCS: RPC server listening on 127.0.0.1:10003
+2024-05-15 18:29:27.571 [INF] RPCS: gRPC proxy started at 127.0.0.1:8003
+2024-05-15 18:29:27.571 [INF] LTND: Opening the main database, this might take a few minutes...
+2024-05-15 18:29:27.571 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2024-05-15 18:29:27.571 [INF] LTND: Creating local graph and channel state DB instances
+2024-05-15 18:29:27.586 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2024-05-15 18:29:27.586 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2024-05-15 18:29:27.586 [INF] LTND: Database(s) now open (time_to_open=14.1313ms)!
+2024-05-15 18:29:27.592 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-15 18:29:27.592 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2024-05-15 18:29:36.694 [INF] LNWL: Opened wallet
+2024-05-15 18:29:37.515 [INF] LNWL: The wallet has been unlocked without a time limit
+2024-05-15 18:29:37.529 [INF] CHRE: LightningWallet opened
+2024-05-15 18:29:37.544 [INF] HSWC: Cleaning circuits from disk for closed channels
+2024-05-15 18:29:37.545 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2024-05-15 18:29:37.545 [INF] HSWC: Restoring in-memory circuit state from disk
+2024-05-15 18:29:37.548 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2024-05-15 18:29:37.551 [INF] LNWL: Started rescan from block 56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646 (height 500) for 1 address
+2024-05-15 18:29:37.556 [INF] LNWL: Catching up block hashes to height 500, this might take a while
+2024-05-15 18:29:37.559 [INF] LNWL: Done catching up block hashes
+2024-05-15 18:29:37.560 [INF] LNWL: Finished rescan for 1 address (synced to block 56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646, height 500)
+2024-05-15 18:29:37.562 [INF] LTND: Channel backup proxy channel notifier starting
+2024-05-15 18:29:37.562 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2024-05-15 18:29:37.562 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-15 18:29:37.565 [INF] LTND: Waiting for chain backend to finish sync, start_height=500
+2024-05-15 18:29:37.566 [INF] LTND: Chain backend is fully synced (end_height=500)!
+2024-05-15 18:29:37.566 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2024-05-15 18:29:37.566 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2024-05-15 18:29:37.566 [INF] LNWL: SigPool starting
+2024-05-15 18:29:37.574 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.574 [INF] BTCN: Broadcaster now active
+2024-05-15 18:29:37.574 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.574 [INF] CHNF: ChannelNotifier starting
+2024-05-15 18:29:37.574 [INF] PRNF: PeerNotifier starting
+2024-05-15 18:29:37.574 [INF] HSWC: HtlcNotifier starting
+2024-05-15 18:29:37.574 [INF] SWPR: TxPublisher starting...
+2024-05-15 18:29:37.574 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.574 [INF] SWPR: Sweeper starting
+2024-05-15 18:29:37.574 [INF] UTXN: UTXO nursery starting
+2024-05-15 18:29:37.574 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.575 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.575 [INF] BRAR: Breach arbiter starting
+2024-05-15 18:29:37.576 [INF] FNDG: Funding manager starting
+2024-05-15 18:29:37.576 [INF] HSWC: HTLC Switch starting
+2024-05-15 18:29:37.576 [INF] BRAR: Starting contract observer, watching for breaches.
+2024-05-15 18:29:37.576 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.576 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.576 [INF] CNCT: ChainArbitrator starting with config: budget=[tolocal=0 BTC tolocalratio=0.5 anchorcpfp=0 BTC anchorcpfpratio=0.5 deadlinehtlc=0 BTC deadlinehtlcratio=0.5 nodeadlinehtlc=0 BTC nodeadlinehtlcratio=0.5]
+2024-05-15 18:29:37.576 [INF] DISC: Authenticated Gossiper starting
+2024-05-15 18:29:37.576 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.576 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.577 [INF] CRTR: Channel Router starting
+2024-05-15 18:29:37.577 [INF] CRTR: FilteredChainView starting
+2024-05-15 18:29:37.585 [INF] CRTR: Filtering chain using 0 channels active
+2024-05-15 18:29:37.586 [INF] CRTR: Prune tip for Channel Graph: height=500, hash=56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646
+2024-05-15 18:29:37.591 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.591 [INF] INVC: InvoiceRegistry starting
+2024-05-15 18:29:37.591 [INF] HSWC: Onion processor starting
+2024-05-15 18:29:37.593 [INF] NTFN: New block epoch subscription
+2024-05-15 18:29:37.593 [INF] NANN: Channel Status Manager starting
+2024-05-15 18:29:37.593 [INF] CHFT: ChannelEventStore starting
+2024-05-15 18:29:37.593 [INF] CHFT: Adding 0 channels to event store
+2024-05-15 18:29:37.593 [INF] CHBU: chanbackup.SubSwapper starting
+2024-05-15 18:29:37.602 [INF] CHBU: Updating backup file at data\chain\bitcoin\simnet\channel.backup
+2024-05-15 18:29:37.602 [INF] CHBU: Swapping old multi backup file from data\chain\bitcoin\simnet\temp-dont-use.backup to data\chain\bitcoin\simnet\channel.backup
+2024-05-15 18:29:37.610 [INF] CMGR: Server listening on 127.0.0.1:10013
+2024-05-15 18:29:37.610 [INF] SRVR: Auto peer bootstrapping is disabled
+2024-05-15 18:30:17.743 [INF] LTND: Received interrupt
+2024-05-15 18:30:17.743 [INF] LTND: Shutting down...
+2024-05-15 18:30:17.743 [INF] LTND: Gracefully shutting down.
+2024-05-15 18:30:17.744 [INF] NANN: Channel Status Manager shutting down...
+2024-05-15 18:30:17.744 [INF] HSWC: HTLC Switch shutting down...
+2024-05-15 18:30:17.745 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2024-05-15 18:30:17.745 [INF] HSWC: Onion processor shutting down...
+2024-05-15 18:30:17.745 [INF] HSWC: Decaying hash log received shutdown request
+2024-05-15 18:30:17.745 [INF] NTFN: Cancelling epoch notification, epoch_id=11
+2024-05-15 18:30:17.745 [INF] INVC: InvoiceRegistry shutting down...
+2024-05-15 18:30:17.745 [INF] NTFN: Cancelling epoch notification, epoch_id=10
+2024-05-15 18:30:17.746 [INF] CRTR: Channel Router shutting down...
+2024-05-15 18:30:17.746 [INF] CRTR: FilteredChainView stopping
+2024-05-15 18:30:17.746 [INF] CNCT: ChainArbitrator shutting down...
+2024-05-15 18:30:17.746 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2024-05-15 18:30:17.746 [INF] FNDG: Funding manager shutting down...
+2024-05-15 18:30:17.746 [INF] BRAR: Breach arbiter shutting down...
+2024-05-15 18:30:17.747 [INF] UTXN: UTXO nursery shutting down...
+2024-05-15 18:30:17.747 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2024-05-15 18:30:17.747 [INF] DISC: Authenticated gossiper shutting down...
+2024-05-15 18:30:17.751 [INF] DISC: Authenticated Gossiper is stopping
+2024-05-15 18:30:17.752 [INF] NTFN: Cancelling epoch notification, epoch_id=9
+2024-05-15 18:30:17.752 [INF] DISC: Authenticated Gossiper stopped
+2024-05-15 18:30:17.752 [INF] SWPR: Sweeper shutting down...
+2024-05-15 18:30:17.753 [INF] NTFN: Cancelling epoch notification, epoch_id=4
+2024-05-15 18:30:17.753 [INF] SWPR: TxPublisher stopping...
+2024-05-15 18:30:17.753 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2024-05-15 18:30:17.753 [INF] CHNF: ChannelNotifier shutting down...
+2024-05-15 18:30:17.753 [INF] PRNF: PeerNotifier shutting down...
+2024-05-15 18:30:17.754 [INF] HSWC: HtlcNotifier shutting down...
+2024-05-15 18:30:17.754 [INF] CHBU: chanbackup.SubSwapper shutting down...
+2024-05-15 18:30:17.754 [INF] NTFN: btcd notifier shutting down...
+2024-05-15 18:30:17.754 [INF] NTFN: Stopping mempool notifier
+2024-05-15 18:30:17.754 [ERR] NTFN: dead epoch stream in BestBlockTracker
+2024-05-15 18:30:17.754 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2024-05-15 18:30:17.754 [INF] CHFT: ChannelEventStore shutting down...
+2024-05-15 18:30:17.758 [INF] HLCK: Health monitor shutting down...
+2024-05-15 18:30:17.759 [INF] RPCS: Stopping RPC Server
+2024-05-15 18:30:17.759 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2024-05-15 18:30:17.759 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2024-05-15 18:30:17.759 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2024-05-15 18:30:17.761 [INF] LTND: Shutdown complete
+
+2024-05-15 18:43:57.246 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
+2024-05-15 18:43:57.273 [INF] LTND: Version: 0.18.0-beta.rc2 commit=tlv/v1.2.6, build=production, logging=default, debuglevel=info
+2024-05-15 18:43:57.273 [INF] LTND: Active chain: Bitcoin (network=simnet)
+2024-05-15 18:43:57.275 [INF] RPCS: RPC server listening on 127.0.0.1:10003
+2024-05-15 18:43:57.279 [INF] RPCS: gRPC proxy started at 127.0.0.1:8003
+2024-05-15 18:43:57.279 [INF] LTND: Opening the main database, this might take a few minutes...
+2024-05-15 18:43:57.281 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2024-05-15 18:43:57.284 [INF] LTND: Creating local graph and channel state DB instances
+2024-05-15 18:43:57.292 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2024-05-15 18:43:57.292 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2024-05-15 18:43:57.293 [INF] LTND: Database(s) now open (time_to_open=10.4614ms)!
+2024-05-15 18:43:57.293 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-15 18:43:57.293 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2024-05-15 18:48:51.746 [INF] LNWL: Opened wallet
+2024-05-15 18:48:52.687 [INF] LNWL: The wallet has been unlocked without a time limit
+2024-05-15 18:48:52.702 [INF] CHRE: LightningWallet opened
+2024-05-15 18:48:52.715 [INF] HSWC: Cleaning circuits from disk for closed channels
+2024-05-15 18:48:52.715 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2024-05-15 18:48:52.715 [INF] HSWC: Restoring in-memory circuit state from disk
+2024-05-15 18:48:52.719 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2024-05-15 18:48:52.719 [INF] LNWL: Started rescan from block 56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646 (height 500) for 1 address
+2024-05-15 18:48:52.733 [INF] LNWL: Catching up block hashes to height 500, this might take a while
+2024-05-15 18:48:52.737 [INF] LNWL: Done catching up block hashes
+2024-05-15 18:48:52.737 [INF] LNWL: Finished rescan for 1 address (synced to block 56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646, height 500)
+2024-05-15 18:48:52.737 [INF] LTND: Channel backup proxy channel notifier starting
+2024-05-15 18:48:52.738 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2024-05-15 18:48:52.738 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-15 18:48:52.740 [INF] LTND: Waiting for chain backend to finish sync, start_height=500
+2024-05-15 18:48:52.740 [INF] LTND: Chain backend is fully synced (end_height=500)!
+2024-05-15 18:48:52.741 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2024-05-15 18:48:52.741 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2024-05-15 18:48:52.741 [INF] LNWL: SigPool starting
+2024-05-15 18:48:52.750 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.751 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.750 [INF] BTCN: Broadcaster now active
+2024-05-15 18:48:52.751 [INF] CHNF: ChannelNotifier starting
+2024-05-15 18:48:52.751 [INF] PRNF: PeerNotifier starting
+2024-05-15 18:48:52.752 [INF] HSWC: HtlcNotifier starting
+2024-05-15 18:48:52.752 [INF] SWPR: TxPublisher starting...
+2024-05-15 18:48:52.752 [INF] SWPR: Sweeper starting
+2024-05-15 18:48:52.752 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.752 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.752 [INF] UTXN: UTXO nursery starting
+2024-05-15 18:48:52.754 [INF] BRAR: Breach arbiter starting
+2024-05-15 18:48:52.754 [INF] FNDG: Funding manager starting
+2024-05-15 18:48:52.754 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.754 [INF] BRAR: Starting contract observer, watching for breaches.
+2024-05-15 18:48:52.754 [INF] HSWC: HTLC Switch starting
+2024-05-15 18:48:52.755 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.755 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.755 [INF] CNCT: ChainArbitrator starting with config: budget=[tolocal=0 BTC tolocalratio=0.5 anchorcpfp=0 BTC anchorcpfpratio=0.5 deadlinehtlc=0 BTC deadlinehtlcratio=0.5 nodeadlinehtlc=0 BTC nodeadlinehtlcratio=0.5]
+2024-05-15 18:48:52.756 [INF] DISC: Authenticated Gossiper starting
+2024-05-15 18:48:52.756 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.756 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.757 [INF] CRTR: Channel Router starting
+2024-05-15 18:48:52.758 [INF] CRTR: FilteredChainView starting
+2024-05-15 18:48:52.769 [INF] CRTR: Filtering chain using 0 channels active
+2024-05-15 18:48:52.770 [INF] CRTR: Prune tip for Channel Graph: height=500, hash=56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646
+2024-05-15 18:48:52.776 [INF] INVC: InvoiceRegistry starting
+2024-05-15 18:48:52.776 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.776 [INF] HSWC: Onion processor starting
+2024-05-15 18:48:52.779 [INF] NANN: Channel Status Manager starting
+2024-05-15 18:48:52.779 [INF] CHFT: ChannelEventStore starting
+2024-05-15 18:48:52.779 [INF] CHFT: Adding 0 channels to event store
+2024-05-15 18:48:52.779 [INF] NTFN: New block epoch subscription
+2024-05-15 18:48:52.779 [INF] CHBU: chanbackup.SubSwapper starting
+2024-05-15 18:48:52.789 [INF] CHBU: Updating backup file at data\chain\bitcoin\simnet\channel.backup
+2024-05-15 18:48:52.793 [INF] CHBU: Swapping old multi backup file from data\chain\bitcoin\simnet\temp-dont-use.backup to data\chain\bitcoin\simnet\channel.backup
+2024-05-15 18:48:52.794 [INF] CMGR: Server listening on 127.0.0.1:10013
+2024-05-15 18:48:52.794 [INF] SRVR: Auto peer bootstrapping is disabled
+2024-05-15 18:49:38.409 [INF] SRVR: Established connection to: 03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e@127.0.0.1:10012
+2024-05-15 18:49:38.409 [INF] SRVR: Finalizing connection to 03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e@127.0.0.1:10012, inbound=false
+2024-05-15 18:49:38.411 [INF] PEER: Peer(03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e): Negotiated chan series queries
+2024-05-15 18:49:38.411 [INF] DISC: Creating new GossipSyncer for peer=03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e
+2024-05-15 18:49:38.411 [INF] DISC: GossipSyncer(03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e): requesting new chans from height=0 and 500 blocks after
+2024-05-15 18:49:38.412 [INF] DISC: GossipSyncer(03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e): applying new update horizon: start=2024-05-15 18:49:38 +0200 CEST, end=2160-06-22 00:17:53 +0100 CET, backlog_size=0
+2024-05-15 18:49:38.413 [INF] DISC: GossipSyncer(03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e): buffering chan range reply of size=0
+2024-05-15 18:49:38.413 [INF] DISC: GossipSyncer(03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e): filtering through 0 chans
+2024-05-15 18:49:38.417 [INF] DISC: GossipSyncer(03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e): remote peer has no new chans
+2024-05-15 18:49:38.417 [INF] DISC: GossipSyncer(03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e): applying gossipFilter(start=2024-05-15 18:49:38.4177682 +0200 CEST m=+341.225452701, end=2160-06-22 00:17:53.4177682 +0100 CET)
+2024-05-15 18:58:24.820 [INF] LNWL: Started rescan from block 56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646 (height 500) for 1 address
+2024-05-15 18:58:24.825 [INF] LNWL: Catching up block hashes to height 500, this might take a while
+2024-05-15 18:58:24.827 [INF] LNWL: Done catching up block hashes
+2024-05-15 18:58:24.827 [INF] LNWL: Finished rescan for 1 address (synced to block 56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646, height 500)
+2024-05-15 19:01:58.827 [INF] LNWL: Started rescan from block 56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646 (height 500) for 1 address
+2024-05-15 19:01:58.840 [INF] LNWL: Catching up block hashes to height 500, this might take a while
+2024-05-15 19:01:58.846 [INF] LNWL: Done catching up block hashes
+2024-05-15 19:01:58.846 [INF] LNWL: Finished rescan for 1 address (synced to block 56e5916828c58f514ec2492c53d2404fe8597bffa830a8d5cd274e733f219646, height 500)
+2024-05-15 19:02:05.084 [INF] CRTR: Pruning channel graph using block 3c54389be39c72e17f628533514ac14b85428f5c9eb90f08053d9f284ae9bd27 (height=501)
+2024-05-15 19:02:05.085 [INF] NTFN: New block: height=501, sha=3c54389be39c72e17f628533514ac14b85428f5c9eb90f08053d9f284ae9bd27
+2024-05-15 19:02:05.085 [INF] UTXN: Attempting to graduate height=501: num_kids=0, num_babies=0
+2024-05-15 19:02:05.086 [INF] NTFN: New block: height=502, sha=1f35435384c01758fa8dd404331099acc4bbc8dd8c203e2c80f00bd2536f7e5b
+2024-05-15 19:02:05.087 [INF] UTXN: Attempting to graduate height=502: num_kids=0, num_babies=0
+2024-05-15 19:02:05.088 [INF] NTFN: New block: height=503, sha=36441775c18b82a14aa10407aa6477d1c546bd8788a13259b9ccc8ce013f35f8
+2024-05-15 19:02:05.088 [INF] UTXN: Attempting to graduate height=503: num_kids=0, num_babies=0
+2024-05-15 19:02:05.089 [INF] NTFN: New block: height=504, sha=0bb0f2b3836185eb6536cc2e5491fe545dc7366a5efb4af15d55e8d3e0c66c3a
+2024-05-15 19:02:05.089 [INF] UTXN: Attempting to graduate height=504: num_kids=0, num_babies=0
+2024-05-15 19:02:05.089 [INF] NTFN: New block: height=505, sha=732f1dbb8f0dbfbca14f7e8341d7f29a27e2dadc076369173fa9e76ecfb595b1
+2024-05-15 19:02:05.089 [INF] UTXN: Attempting to graduate height=505: num_kids=0, num_babies=0
+2024-05-15 19:02:05.090 [INF] NTFN: New block: height=506, sha=35b52f7c5db39d91d0eca1abb2641da28bc6ea0b19847a971c59ce67bab0b214
+2024-05-15 19:02:05.090 [INF] UTXN: Attempting to graduate height=506: num_kids=0, num_babies=0
+2024-05-15 19:02:05.092 [INF] CRTR: Block 3c54389be39c72e17f628533514ac14b85428f5c9eb90f08053d9f284ae9bd27 (height=501) closed 0 channels
+2024-05-15 19:02:05.093 [INF] CRTR: Pruning channel graph using block 1f35435384c01758fa8dd404331099acc4bbc8dd8c203e2c80f00bd2536f7e5b (height=502)
+2024-05-15 19:02:05.099 [INF] CRTR: Block 1f35435384c01758fa8dd404331099acc4bbc8dd8c203e2c80f00bd2536f7e5b (height=502) closed 0 channels
+2024-05-15 19:02:05.099 [INF] CRTR: Pruning channel graph using block 36441775c18b82a14aa10407aa6477d1c546bd8788a13259b9ccc8ce013f35f8 (height=503)
+2024-05-15 19:02:05.106 [INF] CRTR: Block 36441775c18b82a14aa10407aa6477d1c546bd8788a13259b9ccc8ce013f35f8 (height=503) closed 0 channels
+2024-05-15 19:02:05.106 [INF] CRTR: Pruning channel graph using block 0bb0f2b3836185eb6536cc2e5491fe545dc7366a5efb4af15d55e8d3e0c66c3a (height=504)
+2024-05-15 19:02:05.112 [INF] CRTR: Block 0bb0f2b3836185eb6536cc2e5491fe545dc7366a5efb4af15d55e8d3e0c66c3a (height=504) closed 0 channels
+2024-05-15 19:02:05.112 [INF] CRTR: Pruning channel graph using block 732f1dbb8f0dbfbca14f7e8341d7f29a27e2dadc076369173fa9e76ecfb595b1 (height=505)
+2024-05-15 19:02:05.117 [INF] CRTR: Block 732f1dbb8f0dbfbca14f7e8341d7f29a27e2dadc076369173fa9e76ecfb595b1 (height=505) closed 0 channels
+2024-05-15 19:02:05.117 [INF] CRTR: Pruning channel graph using block 35b52f7c5db39d91d0eca1abb2641da28bc6ea0b19847a971c59ce67bab0b214 (height=506)
+2024-05-15 19:02:05.123 [INF] CRTR: Block 35b52f7c5db39d91d0eca1abb2641da28bc6ea0b19847a971c59ce67bab0b214 (height=506) closed 0 channels
+2024-05-15 19:02:57.760 [INF] LNWL: Started rescan from block 35b52f7c5db39d91d0eca1abb2641da28bc6ea0b19847a971c59ce67bab0b214 (height 506) for 1 address
+2024-05-15 19:02:57.764 [INF] LNWL: Catching up block hashes to height 506, this might take a while
+2024-05-15 19:02:57.773 [INF] LNWL: Done catching up block hashes
+2024-05-15 19:02:57.773 [INF] LNWL: Finished rescan for 1 address (synced to block 35b52f7c5db39d91d0eca1abb2641da28bc6ea0b19847a971c59ce67bab0b214, height 506)
+2024-05-15 19:04:29.945 [INF] CRTR: Processed channels=1 updates=2 nodes=2 in last 15m37.1684508s
+2024-05-15 22:23:10.328 [INF] PEER: Peer(03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e): disconnecting 03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e@127.0.0.1:10012, reason: peer 03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e@127.0.0.1:10012 no answer for 5m0s -- disconnecting
+2024-05-15 22:23:10.328 [INF] DISC: GossipSyncer(03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e): requesting new chans from height=0 and 506 blocks after
+2024-05-15 22:23:10.329 [INF] CRTR: Examining channel graph for zombie channels
+2024-05-15 22:23:10.336 [INF] CRTR: Pruning 0 zombie channels
+2024-05-15 22:23:10.430 [INF] DISC: Removing GossipSyncer for peer=03cbb008dce947cfe8e449afa4e105e20fd13dada165321bf7808eb40cd415817e
+2024-05-16 00:06:06.609 [INF] CRTR: Examining channel graph for zombie channels
+2024-05-16 00:06:06.609 [INF] CRTR: Pruning 0 zombie channels
+2024-05-16 01:30:10.997 [INF] CRTR: Examining channel graph for zombie channels
+2024-05-16 01:30:11.000 [INF] CRTR: Pruning 0 zombie channels
+2024-05-16 05:16:41.900 [INF] CRTR: Examining channel graph for zombie channels
+2024-05-16 05:16:41.907 [INF] CRTR: Pruning 0 zombie channels
+2024-05-16 09:04:59.579 [INF] CRTR: Examining channel graph for zombie channels
+2024-05-16 09:04:59.579 [INF] CRTR: Pruning 0 zombie channels
+2024-05-16 09:48:52.786 [INF] CRTR: Examining channel graph for zombie channels
+2024-05-16 09:48:52.787 [INF] CRTR: Pruning 0 zombie channels
+2024-05-16 10:48:52.789 [INF] CRTR: Examining channel graph for zombie channels
+2024-05-16 10:48:52.790 [INF] CRTR: Pruning 0 zombie channels
+2024-05-16 11:48:52.782 [INF] CRTR: Examining channel graph for zombie channels
+2024-05-16 11:48:52.783 [INF] CRTR: Pruning 0 zombie channels
+2024-05-16 14:03:58.558 [INF] CRTR: Examining channel graph for zombie channels
+2024-05-16 14:03:58.622 [INF] CRTR: Pruning 0 zombie channels
+2024-05-16 14:48:52.785 [INF] CRTR: Examining channel graph for zombie channels
+2024-05-16 14:48:52.785 [INF] CRTR: Pruning 0 zombie channels
+2024-05-16 15:08:22.756 [INF] HLCK: Health check: chain backend, call: 1 failed with: health check: chain backend timed out after: 30s, backing off for: 2m0s
+2024-05-16 15:10:52.758 [INF] HLCK: Health check: chain backend, call: 2 failed with: health check: chain backend timed out after: 30s, backing off for: 2m0s
+2024-05-16 15:13:22.772 [CRT] SRVR: Health check: chain backend failed after 3 calls
+2024-05-16 15:13:22.773 [INF] SRVR: Sending request for shutdown
+2024-05-16 15:13:22.773 [INF] LTND: Received shutdown request.
+2024-05-16 15:13:22.773 [INF] LTND: Shutting down...
+2024-05-16 15:13:22.774 [INF] LTND: Gracefully shutting down.
+2024-05-16 15:13:22.774 [INF] NANN: Channel Status Manager shutting down...
+2024-05-16 15:13:22.774 [INF] HSWC: HTLC Switch shutting down...
+2024-05-16 15:13:22.774 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2024-05-16 15:13:22.774 [INF] HSWC: Onion processor shutting down...
+2024-05-16 15:13:22.775 [INF] HSWC: Decaying hash log received shutdown request
+2024-05-16 15:13:22.775 [INF] NTFN: Cancelling epoch notification, epoch_id=11
+2024-05-16 15:13:22.775 [INF] INVC: InvoiceRegistry shutting down...
+2024-05-16 15:13:22.775 [INF] NTFN: Cancelling epoch notification, epoch_id=10
+2024-05-16 15:13:22.776 [INF] CRTR: Channel Router shutting down...
+2024-05-16 15:13:22.776 [INF] CRTR: FilteredChainView stopping
+2024-05-16 15:13:22.776 [INF] CNCT: ChainArbitrator shutting down...
+2024-05-16 15:13:22.776 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2024-05-16 15:13:22.776 [INF] FNDG: Funding manager shutting down...
+2024-05-16 15:13:22.776 [INF] BRAR: Breach arbiter shutting down...
+2024-05-16 15:13:22.776 [INF] UTXN: UTXO nursery shutting down...
+2024-05-16 15:13:22.776 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2024-05-16 15:13:22.777 [INF] DISC: Authenticated gossiper shutting down...
+2024-05-16 15:13:22.777 [INF] DISC: Authenticated Gossiper is stopping
+2024-05-16 15:13:22.777 [INF] NTFN: Cancelling epoch notification, epoch_id=9
+2024-05-16 15:13:22.777 [INF] DISC: Authenticated Gossiper stopped
+2024-05-16 15:13:22.777 [INF] SWPR: Sweeper shutting down...
+2024-05-16 15:13:22.777 [INF] NTFN: Cancelling epoch notification, epoch_id=4
+2024-05-16 15:13:22.777 [INF] SWPR: TxPublisher stopping...
+2024-05-16 15:13:22.777 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2024-05-16 15:13:22.777 [INF] CHNF: ChannelNotifier shutting down...
+2024-05-16 15:13:22.780 [INF] PRNF: PeerNotifier shutting down...
+2024-05-16 15:13:22.780 [INF] HSWC: HtlcNotifier shutting down...
+2024-05-16 15:13:22.780 [INF] CHBU: chanbackup.SubSwapper shutting down...
+2024-05-16 15:13:22.780 [INF] NTFN: btcd notifier shutting down...
+2024-05-16 15:13:22.780 [INF] NTFN: Stopping mempool notifier
+2024-05-16 15:13:22.780 [ERR] NTFN: dead epoch stream in BestBlockTracker
+2024-05-16 15:13:22.781 [INF] CHFT: ChannelEventStore shutting down...
+2024-05-16 15:13:22.780 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2024-05-16 15:13:22.788 [INF] HLCK: Health monitor shutting down...
+2024-05-16 15:13:22.789 [INF] RPCS: Stopping RPC Server
+2024-05-16 15:13:22.789 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2024-05-16 15:13:22.789 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2024-05-16 15:13:22.790 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2024-05-16 15:13:22.792 [INF] LTND: Shutdown complete
+
