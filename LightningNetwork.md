@@ -34,6 +34,7 @@ The Lightning Network works by creating a network of payment channels on top of 
 Use Lightning Network software **LND** to initialize Lightning nodes for Alice, Bob, and Charlie respectively on your local machine. Ensure that each node is started with unique port configurations to avoid conflicts.
 
 To set up Lightning Network nodes for Alice, Bob, and Charlie, follow these steps:
+
 1.**Starting lnd (Alice’s node):**
    - Run the following command for Alice's node:
    ```bash
