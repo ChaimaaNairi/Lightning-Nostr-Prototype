@@ -226,5 +226,48 @@ Sending multi-hop payments involves routing a payment through multiple channels.
 ```bash
 charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon openchannel --node_key=<BOB_PUBKEY> --local_amt=800000 --push_amt=200000
 ```
+**Note:** The `--push_amt` argument specifies the amount of money we want the other party to have at the initial channel state.
+<img src="" alt="">
+
+- Mine the channel funding transaction:
+```bash
+charlie$ btcctl --simnet --rpcuser=kek --rpcpass=kek generate 6
+```
+<img src="" alt="">
+
+- Make a payment from Alice to Charlie by routing through Bob:
+```bash
+charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon addinvoice --amt=10000
+```
+```bash
+alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon sendpayment --pay_req=<encoded_invoice>
+```
+<img src="" alt="">
+
+- Check that Charlie's channel has been credited with the payment amount:
+```bash
+charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon listchannels
+```
+<img src="" alt="">
 
 
+## Closing channels
+We close channels to retrieve the funds that were locked within them and to ensure that any remaining balances are settled appropriately between the parties involved. This action allows us to finalize transactions and effectively manage our assets within the Lightning Network.
+
+
+```bash
+alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon listchannels
+```
+
+```bash
+alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon closechannel --funding_txid=<funding_txid> --output_index=<output_index>
+```
+
+```bash
+--simnet --rpcuser=username --rpcpass=password generate 1
+```
+
+
+```bash
+bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon walletbalance
+```
