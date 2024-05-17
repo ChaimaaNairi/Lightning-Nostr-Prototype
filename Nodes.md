@@ -9,6 +9,10 @@ In this section, we explore the configuration and transactions of three Lightnin
 <p align="center">
   <img src="image.png" alt="Lightning Network Transaction" width="400" height="180"/>
 </p>
+<<<<<<< HEAD
+=======
+***Image:** Illustration of single and multiple-hop payments in the Lightning Network.*
+>>>>>>> e90655afcf3a7df246e658f31817445f43a960c0
 
 ***Image:** Illustration of single and multiple-hop payments in the Lightning Network.*
 
