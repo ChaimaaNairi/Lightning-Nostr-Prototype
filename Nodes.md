@@ -7,12 +7,8 @@ In this section, we explore the configuration and transactions of three Lightnin
 - **Multiple-hop payments**: Bob to Charlie
 
 <p align="center">
-  <img src="image.png" alt="Lightning Network Transaction" width="400" height="180"/>
+  <img src="images/image.png" alt="Lightning Network Transaction" width="400" height="180"/>
 </p>
-<<<<<<< HEAD
-=======
-***Image:** Illustration of single and multiple-hop payments in the Lightning Network.*
->>>>>>> e90655afcf3a7df246e658f31817445f43a960c0
 
 ***Image:** Illustration of single and multiple-hop payments in the Lightning Network.*
 
@@ -32,26 +28,26 @@ alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simne
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon getinfo
 ```
-<img src="AliceGetInfo.png" alt="Alice getInfo">
+<img src="images/AliceGetInfo.png" alt="Alice getInfo">
 
 - To setup a Bitcoin address for Alice:
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon newaddress np2wkh
 ```
-<img src="AliceBitcoinAddress.png" alt="Alice's Bitcoin address">
+<img src="images/AliceBitcoinAddress.png" alt="Alice's Bitcoin address">
 
 - for Funding Alice, we have to run this in a new terminal:
 setting Alice as the recipient of all mining rewards
 ```bash
 alice$ btcd --simnet --txindex --rpcuser=username --rpcpass=password --miningaddr=<ALICE_ADDRESS>
 ```
-<img src="AliceRunBtcd.png" alt="">
+<img src="images/AliceRunBtcd.png" alt="">
 
 - Generate <number_of_blocks> blocks, so that Alice gets the reward:
 ```bash
 alice$ btcctl --simnet --rpcuser=username --rpcpass=password generate <number_of_blocks>
 ```
-<img src="AliceGenerateBlock.png" alt="">
+<img src="images/AliceGenerateBlock.png" alt="">
 
 - Check that segwit is active
 ```bash
@@ -61,7 +57,7 @@ alice$ btcctl --simnet --rpcuser=username --rpcpass=password getblockchaininfo |
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon walletbalance
 ```
-<img src="AliceWalletBalance.png" alt="">
+<img src="images/AliceWalletBalance.png" alt="">
 
 ## Bob Node  
 - To create a wallet for Bob on her Lightning Network node:
@@ -117,10 +113,14 @@ bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/
 ```bash
 bob$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon connect <BOB_PUBKEY>@localhost:10012
 ```
+<img src="images/AliceBobConnection.png" alt="">
+
 3. **Check that Alice has added Bob as a peer:**
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon listpeers
 ```
+<img src="images/AliceListpeers.png" alt="">
+
 4. **Check that Bob has added Alice as a peer:**
 ```bash
 bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon listpeers
@@ -136,14 +136,19 @@ charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/sim
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon openchannel --node_key=<BOB_PUBKEY> --local_amt=1000000
 ```
+<img src="images/AliceBobOpenChannel.png" alt="">
+
 - We now need to mine six blocks so that the channel is considered valid:
 ```bash
 alice$ btcctl --simnet --rpcuser=udername --rpcpass=password generate 6
 ```
+<img src="images/AliceBobGenerateBlock.png" alt="">
+
 - Check that Alice<–>Bob channel was created:
 ```bash
     alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon listchannels
 ```
+<img src="images/AliceChannelList.png" alt="">
 
 ## Single-hop payments: Alice to Bob
 - Bob will need to generate an invoice:
@@ -154,6 +159,13 @@ bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon sendpayment --pay_req=<encoded_invoice>
 ```
+<img src="images/AliceToBob_Transaction.png" alt="">
+
+- Bob walletbalance:
+```bash
+alice$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon walletbalance
+```
+<img src="images/BobWalletBalanceA.png" alt="">
 
 ## Multiple-hop payments: Bob to Charlie
 
