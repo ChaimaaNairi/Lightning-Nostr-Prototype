@@ -114,7 +114,7 @@ charlie$ btcctl --simnet --rpcuser=username --rpcpass=password getblockchaininfo
 charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon walletbalance
 ```
 <img src="images/CharlieWalletBalance.png" alt="">
-
+ 
 ## Creating the P2P Network
 **Connect Alice to Bob:**
 1. **Get Bob's identity pubkey:**

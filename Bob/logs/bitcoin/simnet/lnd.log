@@ -1508,4 +1508,243 @@
 2024-05-16 15:06:55.948 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
 2024-05-16 15:06:55.948 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
 2024-05-16 15:06:55.949 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
-2024-05-16 15:06:55.952 [INF] LTND: Shutdown complete
+2024-05-16 15:06:55.952 [INF] LTND: Shutdown complete2024-05-17 11:34:55.490 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
+2024-05-17 11:34:55.504 [INF] LTND: Version: 0.18.0-beta.rc2 commit=tlv/v1.2.6, build=production, logging=default, debuglevel=info
+2024-05-17 11:34:55.504 [INF] LTND: Active chain: Bitcoin (network=simnet)
+2024-05-17 11:34:55.505 [INF] RPCS: RPC server listening on 127.0.0.1:10002
+2024-05-17 11:34:55.507 [INF] RPCS: gRPC proxy started at 127.0.0.1:8002
+2024-05-17 11:34:55.507 [INF] LTND: Opening the main database, this might take a few minutes...
+2024-05-17 11:34:55.507 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2024-05-17 11:34:55.524 [INF] LTND: Creating local graph and channel state DB instances
+2024-05-17 11:34:55.531 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2024-05-17 11:34:55.531 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2024-05-17 11:34:55.531 [INF] LTND: Database(s) now open (time_to_open=24.4614ms)!
+2024-05-17 11:34:55.532 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-17 11:34:55.532 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2024-05-17 11:35:11.714 [INF] LNWL: Opened wallet
+2024-05-17 11:35:12.599 [INF] LNWL: The wallet has been unlocked without a time limit
+2024-05-17 11:35:12.608 [INF] CHRE: LightningWallet opened
+2024-05-17 11:35:12.619 [INF] HSWC: Cleaning circuits from disk for closed channels
+2024-05-17 11:35:12.619 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2024-05-17 11:35:12.619 [INF] HSWC: Restoring in-memory circuit state from disk
+2024-05-17 11:35:12.621 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2024-05-17 11:35:12.623 [INF] HSWC: Trimming open circuits for chan_id=501:1:0, start_htlc_id=0
+2024-05-17 11:35:12.637 [INF] LNWL: Started rescan from block 35b52f7c5db39d91d0eca1abb2641da28bc6ea0b19847a971c59ce67bab0b214 (height 506) for 2 addresses
+2024-05-17 11:35:12.640 [INF] LNWL: Catching up block hashes to height 606, this might take a while
+2024-05-17 11:35:12.646 [INF] LTND: Channel backup proxy channel notifier starting
+2024-05-17 11:35:12.646 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2024-05-17 11:35:12.646 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-17 11:35:12.647 [INF] LTND: Waiting for chain backend to finish sync, start_height=606
+2024-05-17 11:35:12.668 [INF] LNWL: Done catching up block hashes
+2024-05-17 11:35:12.668 [INF] LNWL: Finished rescan for 2 addresses (synced to block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf, height 606)
+2024-05-17 11:35:13.659 [INF] LTND: Chain backend is fully synced (end_height=606)!
+2024-05-17 11:35:13.659 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2024-05-17 11:35:13.659 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2024-05-17 11:35:13.660 [INF] LNWL: SigPool starting
+2024-05-17 11:35:13.672 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.672 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.672 [INF] BTCN: Broadcaster now active
+2024-05-17 11:35:13.672 [INF] CHNF: ChannelNotifier starting
+2024-05-17 11:35:13.673 [INF] PRNF: PeerNotifier starting
+2024-05-17 11:35:13.673 [INF] HSWC: HtlcNotifier starting
+2024-05-17 11:35:13.673 [INF] SWPR: TxPublisher starting...
+2024-05-17 11:35:13.673 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.673 [INF] SWPR: Sweeper starting
+2024-05-17 11:35:13.674 [INF] UTXN: UTXO nursery starting
+2024-05-17 11:35:13.674 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.674 [INF] BRAR: Breach arbiter starting
+2024-05-17 11:35:13.675 [INF] FNDG: Funding manager starting
+2024-05-17 11:35:13.674 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.675 [INF] BRAR: Starting contract observer, watching for breaches.
+2024-05-17 11:35:13.675 [INF] HSWC: HTLC Switch starting
+2024-05-17 11:35:13.675 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.676 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.676 [INF] CNCT: ChainArbitrator starting with config: budget=[tolocal=0 BTC tolocalratio=0.5 anchorcpfp=0 BTC anchorcpfpratio=0.5 deadlinehtlc=0 BTC deadlinehtlcratio=0.5 nodeadlinehtlc=0 BTC nodeadlinehtlcratio=0.5]
+2024-05-17 11:35:13.676 [INF] CNCT: Creating ChannelArbitrators for 1 active channels
+2024-05-17 11:35:13.677 [INF] NTFN: New spend subscription: spend_id=1, outpoint=45d59174304857ab093abd95d6b40609717d7b19114ac60a07566ec4cd95f49a:0, script=0 6e2110455de1a1d04afb17743b859fafd9a256374d959b3795b64dca73216040, height_hint=501
+2024-05-17 11:35:13.678 [INF] NTFN: Dispatching historical spend rescan for outpoint=45d59174304857ab093abd95d6b40609717d7b19114ac60a07566ec4cd95f49a:0, script=0 6e2110455de1a1d04afb17743b859fafd9a256374d959b3795b64dca73216040, start=501, end=606
+2024-05-17 11:35:13.692 [INF] CNCT: Close observer for ChannelPoint(45d59174304857ab093abd95d6b40609717d7b19114ac60a07566ec4cd95f49a:0) active
+2024-05-17 11:35:13.693 [INF] CNCT: ChannelArbitrator(45d59174304857ab093abd95d6b40609717d7b19114ac60a07566ec4cd95f49a:0): starting state=StateDefault, trigger=chainTrigger, triggerHeight=606
+2024-05-17 11:35:13.694 [INF] DISC: Authenticated Gossiper starting
+2024-05-17 11:35:13.694 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.694 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.694 [INF] CRTR: Channel Router starting
+2024-05-17 11:35:13.695 [INF] CRTR: FilteredChainView starting
+2024-05-17 11:35:13.705 [INF] CRTR: Filtering chain using 1 channels active
+2024-05-17 11:35:13.705 [INF] CRTR: Prune tip for Channel Graph: height=506, hash=35b52f7c5db39d91d0eca1abb2641da28bc6ea0b19847a971c59ce67bab0b214
+2024-05-17 11:35:13.706 [INF] CRTR: Syncing channel graph from height=506 (hash=35b52f7c5db39d91d0eca1abb2641da28bc6ea0b19847a971c59ce67bab0b214) to height=606 (hash=3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf)
+2024-05-17 11:35:13.706 [INF] CRTR: Filtering block for closed channels, at height: 507
+2024-05-17 11:35:13.707 [INF] CRTR: Filtering block for closed channels, at height: 508
+2024-05-17 11:35:13.708 [INF] CRTR: Filtering block for closed channels, at height: 509
+2024-05-17 11:35:13.709 [INF] CRTR: Filtering block for closed channels, at height: 510
+2024-05-17 11:35:13.710 [INF] CRTR: Filtering block for closed channels, at height: 511
+2024-05-17 11:35:13.710 [INF] CRTR: Filtering block for closed channels, at height: 512
+2024-05-17 11:35:13.711 [INF] CRTR: Filtering block for closed channels, at height: 513
+2024-05-17 11:35:13.712 [INF] CRTR: Filtering block for closed channels, at height: 514
+2024-05-17 11:35:13.713 [INF] CRTR: Filtering block for closed channels, at height: 515
+2024-05-17 11:35:13.714 [INF] CRTR: Filtering block for closed channels, at height: 516
+2024-05-17 11:35:13.715 [INF] CRTR: Filtering block for closed channels, at height: 517
+2024-05-17 11:35:13.715 [INF] CRTR: Filtering block for closed channels, at height: 518
+2024-05-17 11:35:13.716 [INF] CRTR: Filtering block for closed channels, at height: 519
+2024-05-17 11:35:13.717 [INF] CRTR: Filtering block for closed channels, at height: 520
+2024-05-17 11:35:13.717 [INF] CRTR: Filtering block for closed channels, at height: 521
+2024-05-17 11:35:13.718 [INF] CRTR: Filtering block for closed channels, at height: 522
+2024-05-17 11:35:13.719 [INF] CRTR: Filtering block for closed channels, at height: 523
+2024-05-17 11:35:13.720 [INF] CRTR: Filtering block for closed channels, at height: 524
+2024-05-17 11:35:13.720 [INF] CRTR: Filtering block for closed channels, at height: 525
+2024-05-17 11:35:13.721 [INF] CRTR: Filtering block for closed channels, at height: 526
+2024-05-17 11:35:13.722 [INF] CRTR: Filtering block for closed channels, at height: 527
+2024-05-17 11:35:13.723 [INF] CRTR: Filtering block for closed channels, at height: 528
+2024-05-17 11:35:13.723 [INF] CRTR: Filtering block for closed channels, at height: 529
+2024-05-17 11:35:13.724 [INF] CRTR: Filtering block for closed channels, at height: 530
+2024-05-17 11:35:13.725 [INF] CRTR: Filtering block for closed channels, at height: 531
+2024-05-17 11:35:13.725 [INF] CRTR: Filtering block for closed channels, at height: 532
+2024-05-17 11:35:13.726 [INF] CRTR: Filtering block for closed channels, at height: 533
+2024-05-17 11:35:13.726 [INF] CRTR: Filtering block for closed channels, at height: 534
+2024-05-17 11:35:13.727 [INF] CRTR: Filtering block for closed channels, at height: 535
+2024-05-17 11:35:13.728 [INF] CRTR: Filtering block for closed channels, at height: 536
+2024-05-17 11:35:13.729 [INF] CRTR: Filtering block for closed channels, at height: 537
+2024-05-17 11:35:13.729 [INF] CRTR: Filtering block for closed channels, at height: 538
+2024-05-17 11:35:13.730 [INF] CRTR: Filtering block for closed channels, at height: 539
+2024-05-17 11:35:13.731 [INF] CRTR: Filtering block for closed channels, at height: 540
+2024-05-17 11:35:13.731 [INF] CRTR: Filtering block for closed channels, at height: 541
+2024-05-17 11:35:13.732 [INF] CRTR: Filtering block for closed channels, at height: 542
+2024-05-17 11:35:13.733 [INF] CRTR: Filtering block for closed channels, at height: 543
+2024-05-17 11:35:13.733 [INF] CRTR: Filtering block for closed channels, at height: 544
+2024-05-17 11:35:13.735 [INF] CRTR: Filtering block for closed channels, at height: 545
+2024-05-17 11:35:13.735 [INF] CRTR: Filtering block for closed channels, at height: 546
+2024-05-17 11:35:13.736 [INF] CRTR: Filtering block for closed channels, at height: 547
+2024-05-17 11:35:13.736 [INF] CRTR: Filtering block for closed channels, at height: 548
+2024-05-17 11:35:13.738 [INF] CRTR: Filtering block for closed channels, at height: 549
+2024-05-17 11:35:13.738 [INF] CRTR: Filtering block for closed channels, at height: 550
+2024-05-17 11:35:13.739 [INF] CRTR: Filtering block for closed channels, at height: 551
+2024-05-17 11:35:13.739 [INF] CRTR: Filtering block for closed channels, at height: 552
+2024-05-17 11:35:13.740 [INF] CRTR: Filtering block for closed channels, at height: 553
+2024-05-17 11:35:13.741 [INF] CRTR: Filtering block for closed channels, at height: 554
+2024-05-17 11:35:13.742 [INF] CRTR: Filtering block for closed channels, at height: 555
+2024-05-17 11:35:13.743 [INF] CRTR: Filtering block for closed channels, at height: 556
+2024-05-17 11:35:13.744 [INF] CRTR: Filtering block for closed channels, at height: 557
+2024-05-17 11:35:13.744 [INF] CRTR: Filtering block for closed channels, at height: 558
+2024-05-17 11:35:13.745 [INF] CRTR: Filtering block for closed channels, at height: 559
+2024-05-17 11:35:13.746 [INF] CRTR: Filtering block for closed channels, at height: 560
+2024-05-17 11:35:13.746 [INF] CRTR: Filtering block for closed channels, at height: 561
+2024-05-17 11:35:13.747 [INF] CRTR: Filtering block for closed channels, at height: 562
+2024-05-17 11:35:13.747 [INF] CRTR: Filtering block for closed channels, at height: 563
+2024-05-17 11:35:13.748 [INF] CRTR: Filtering block for closed channels, at height: 564
+2024-05-17 11:35:13.749 [INF] CRTR: Filtering block for closed channels, at height: 565
+2024-05-17 11:35:13.749 [INF] CRTR: Filtering block for closed channels, at height: 566
+2024-05-17 11:35:13.750 [INF] CRTR: Filtering block for closed channels, at height: 567
+2024-05-17 11:35:13.751 [INF] CRTR: Filtering block for closed channels, at height: 568
+2024-05-17 11:35:13.752 [INF] CRTR: Filtering block for closed channels, at height: 569
+2024-05-17 11:35:13.752 [INF] CRTR: Filtering block for closed channels, at height: 570
+2024-05-17 11:35:13.753 [INF] CRTR: Filtering block for closed channels, at height: 571
+2024-05-17 11:35:13.753 [INF] CRTR: Filtering block for closed channels, at height: 572
+2024-05-17 11:35:13.755 [INF] CRTR: Filtering block for closed channels, at height: 573
+2024-05-17 11:35:13.755 [INF] CRTR: Filtering block for closed channels, at height: 574
+2024-05-17 11:35:13.756 [INF] CRTR: Filtering block for closed channels, at height: 575
+2024-05-17 11:35:13.756 [INF] CRTR: Filtering block for closed channels, at height: 576
+2024-05-17 11:35:13.757 [INF] CRTR: Filtering block for closed channels, at height: 577
+2024-05-17 11:35:13.757 [INF] CRTR: Filtering block for closed channels, at height: 578
+2024-05-17 11:35:13.758 [INF] CRTR: Filtering block for closed channels, at height: 579
+2024-05-17 11:35:13.759 [INF] CRTR: Filtering block for closed channels, at height: 580
+2024-05-17 11:35:13.760 [INF] CRTR: Filtering block for closed channels, at height: 581
+2024-05-17 11:35:13.760 [INF] CRTR: Filtering block for closed channels, at height: 582
+2024-05-17 11:35:13.761 [INF] CRTR: Filtering block for closed channels, at height: 583
+2024-05-17 11:35:13.762 [INF] CRTR: Filtering block for closed channels, at height: 584
+2024-05-17 11:35:13.763 [INF] CRTR: Filtering block for closed channels, at height: 585
+2024-05-17 11:35:13.763 [INF] CRTR: Filtering block for closed channels, at height: 586
+2024-05-17 11:35:13.764 [INF] CRTR: Filtering block for closed channels, at height: 587
+2024-05-17 11:35:13.765 [INF] CRTR: Filtering block for closed channels, at height: 588
+2024-05-17 11:35:13.766 [INF] CRTR: Filtering block for closed channels, at height: 589
+2024-05-17 11:35:13.766 [INF] CRTR: Filtering block for closed channels, at height: 590
+2024-05-17 11:35:13.767 [INF] CRTR: Filtering block for closed channels, at height: 591
+2024-05-17 11:35:13.767 [INF] CRTR: Filtering block for closed channels, at height: 592
+2024-05-17 11:35:13.768 [INF] CRTR: Filtering block for closed channels, at height: 593
+2024-05-17 11:35:13.769 [INF] CRTR: Filtering block for closed channels, at height: 594
+2024-05-17 11:35:13.770 [INF] CRTR: Filtering block for closed channels, at height: 595
+2024-05-17 11:35:13.770 [INF] CRTR: Filtering block for closed channels, at height: 596
+2024-05-17 11:35:13.771 [INF] CRTR: Filtering block for closed channels, at height: 597
+2024-05-17 11:35:13.772 [INF] CRTR: Filtering block for closed channels, at height: 598
+2024-05-17 11:35:13.773 [INF] CRTR: Filtering block for closed channels, at height: 599
+2024-05-17 11:35:13.773 [INF] CRTR: Filtering block for closed channels, at height: 600
+2024-05-17 11:35:13.774 [INF] CRTR: Filtering block for closed channels, at height: 601
+2024-05-17 11:35:13.774 [INF] CRTR: Filtering block for closed channels, at height: 602
+2024-05-17 11:35:13.775 [INF] CRTR: Filtering block for closed channels, at height: 603
+2024-05-17 11:35:13.776 [INF] CRTR: Filtering block for closed channels, at height: 604
+2024-05-17 11:35:13.776 [INF] CRTR: Filtering block for closed channels, at height: 605
+2024-05-17 11:35:13.777 [INF] CRTR: Filtering block for closed channels, at height: 606
+2024-05-17 11:35:13.782 [INF] CRTR: Graph pruning complete: 0 channels were closed since height 506
+2024-05-17 11:35:13.787 [INF] INVC: InvoiceRegistry starting
+2024-05-17 11:35:13.787 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.787 [INF] HSWC: Onion processor starting
+2024-05-17 11:35:13.791 [INF] DISC: Retransmitting 1 outgoing channels
+2024-05-17 11:35:13.793 [INF] NANN: Channel Status Manager starting
+2024-05-17 11:35:13.793 [INF] NTFN: New block epoch subscription
+2024-05-17 11:35:13.793 [INF] CHFT: ChannelEventStore starting
+2024-05-17 11:35:13.794 [INF] CHFT: Adding 1 channels to event store
+2024-05-17 11:35:13.794 [INF] CHBU: chanbackup.SubSwapper starting
+2024-05-17 11:35:13.802 [WRN] CHBU: Replacing disk backup for ChannelPoint(45d59174304857ab093abd95d6b40609717d7b19114ac60a07566ec4cd95f49a:0) w/ newer version
+2024-05-17 11:35:13.812 [INF] CHBU: Updating backup file at data\chain\bitcoin\simnet\channel.backup
+2024-05-17 11:35:13.812 [INF] HSWC: Garbage collected 1 shared secret hashes at height=606
+2024-05-17 11:35:13.813 [INF] CHBU: Swapping old multi backup file from data\chain\bitcoin\simnet\temp-dont-use.backup to data\chain\bitcoin\simnet\channel.backup
+2024-05-17 11:35:13.818 [INF] CMGR: Server listening on 127.0.0.1:10012
+2024-05-17 11:35:13.818 [INF] SRVR: Auto peer bootstrapping is disabled
+2024-05-17 11:35:26.258 [INF] SRVR: New inbound connection from 127.0.0.1:57148
+2024-05-17 11:35:26.258 [INF] SRVR: Finalizing connection to 0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2@127.0.0.1:57148, inbound=true
+2024-05-17 11:35:26.259 [INF] PEER: Peer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): Negotiated chan series queries
+2024-05-17 11:35:26.259 [INF] DISC: Creating new GossipSyncer for peer=0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2
+2024-05-17 11:35:26.261 [INF] DISC: GossipSyncer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): requesting new chans from height=0 and 606 blocks after
+2024-05-17 11:35:26.261 [INF] DISC: GossipSyncer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): filtering chan range: start_height=0, num_blocks=606
+2024-05-17 11:35:26.261 [INF] DISC: GossipSyncer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): sending final chan range chunk, size=1
+2024-05-17 11:35:26.261 [INF] DISC: GossipSyncer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): buffering chan range reply of size=1
+2024-05-17 11:35:26.261 [INF] DISC: GossipSyncer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): filtering through 1 chans
+2024-05-17 11:35:26.265 [INF] DISC: GossipSyncer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): remote peer has no new chans
+2024-05-17 11:35:26.266 [INF] DISC: GossipSyncer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): applying gossipFilter(start=2024-05-17 11:35:26.2660217 +0200 CEST m=+30.822098901, end=2160-06-23 17:03:41.2660217 +0100 CET)
+2024-05-17 11:35:26.266 [INF] DISC: GossipSyncer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): applying new update horizon: start=2024-05-17 11:35:26 +0200 CEST, end=2160-06-23 17:03:41 +0100 CET, backlog_size=0
+2024-05-17 11:36:13.832 [INF] CRTR: Processed channels=0 updates=1 nodes=0 in last 1m0.044747s
+2024-05-17 11:44:55.533 [INF] PEER: Peer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): unable to read message from peer: read next header: EOF
+2024-05-17 11:44:55.533 [INF] PEER: Peer(0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2): disconnecting 0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2@127.0.0.1:57148, reason: read handler closed
+2024-05-17 11:44:55.643 [INF] DISC: Removing GossipSyncer for peer=0377771a77ad9d16170d215705bc4d0ca04023365287e00af0c85271661ada53c2
+2024-05-17 11:44:58.770 [INF] LTND: Received interrupt
+2024-05-17 11:44:58.770 [INF] LTND: Shutting down...
+2024-05-17 11:44:58.770 [INF] LTND: Gracefully shutting down.
+2024-05-17 11:44:58.771 [INF] NANN: Channel Status Manager shutting down...
+2024-05-17 11:44:58.771 [INF] HSWC: HTLC Switch shutting down...
+2024-05-17 11:44:58.771 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2024-05-17 11:44:58.771 [INF] HSWC: Onion processor shutting down...
+2024-05-17 11:44:58.772 [INF] HSWC: Decaying hash log received shutdown request
+2024-05-17 11:44:58.772 [INF] NTFN: Cancelling epoch notification, epoch_id=11
+2024-05-17 11:44:58.772 [INF] INVC: InvoiceRegistry shutting down...
+2024-05-17 11:44:58.772 [INF] NTFN: Cancelling epoch notification, epoch_id=10
+2024-05-17 11:44:58.772 [INF] CRTR: Channel Router shutting down...
+2024-05-17 11:44:58.772 [INF] CRTR: FilteredChainView stopping
+2024-05-17 11:44:58.772 [INF] CNCT: ChainArbitrator shutting down...
+2024-05-17 11:44:58.772 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2024-05-17 11:44:58.772 [INF] FNDG: Funding manager shutting down...
+2024-05-17 11:44:58.772 [INF] BRAR: Breach arbiter shutting down...
+2024-05-17 11:44:58.772 [INF] UTXN: UTXO nursery shutting down...
+2024-05-17 11:44:58.773 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2024-05-17 11:44:58.773 [INF] DISC: Authenticated gossiper shutting down...
+2024-05-17 11:44:58.773 [INF] DISC: Authenticated Gossiper is stopping
+2024-05-17 11:44:58.773 [INF] NTFN: Cancelling epoch notification, epoch_id=9
+2024-05-17 11:44:58.773 [INF] DISC: Authenticated Gossiper stopped
+2024-05-17 11:44:58.773 [INF] SWPR: Sweeper shutting down...
+2024-05-17 11:44:58.774 [INF] NTFN: Cancelling epoch notification, epoch_id=4
+2024-05-17 11:44:58.774 [INF] SWPR: TxPublisher stopping...
+2024-05-17 11:44:58.774 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2024-05-17 11:44:58.774 [INF] CHNF: ChannelNotifier shutting down...
+2024-05-17 11:44:58.774 [INF] PRNF: PeerNotifier shutting down...
+2024-05-17 11:44:58.774 [INF] HSWC: HtlcNotifier shutting down...
+2024-05-17 11:44:58.774 [INF] CHBU: chanbackup.SubSwapper shutting down...
+2024-05-17 11:44:58.775 [INF] NTFN: btcd notifier shutting down...
+2024-05-17 11:44:58.775 [INF] NTFN: Stopping mempool notifier
+2024-05-17 11:44:58.775 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2024-05-17 11:44:58.775 [ERR] NTFN: dead epoch stream in BestBlockTracker
+2024-05-17 11:44:58.775 [INF] CHFT: ChannelEventStore shutting down...
+2024-05-17 11:44:58.778 [INF] HLCK: Health monitor shutting down...
+2024-05-17 11:44:58.779 [INF] RPCS: Stopping RPC Server
+2024-05-17 11:44:58.779 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2024-05-17 11:44:58.779 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2024-05-17 11:44:58.779 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2024-05-17 11:44:58.780 [INF] LTND: Shutdown complete
+
