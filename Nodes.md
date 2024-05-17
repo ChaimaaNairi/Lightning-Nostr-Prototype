@@ -68,10 +68,13 @@ bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/
 ```bash
 bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon getinfo
 ```
+<img src="images/BobGetInfo.png" alt="">
+
 - To setup a Bitcoin address for Bob:
 ```bash
 bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon newaddress np2wkh
 ```
+<img src="images/BobBitcoinAddress.png" alt="">
 
 ## Charlie Node
 - To create a wallet for Charlie on her Lightning Network node:
@@ -82,26 +85,35 @@ charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/sim
 ```bash
 charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon getinfo
 ```
+<img src="images/CharlieGetInfo.png" alt="">
+
 - To setup a Bitcoin address for Charlie:
 ```bash
 charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon newaddress np2wkh
 ```
+<img src="images/CharlieBitcoinAddress.png" alt="">
+
 - for Funding Charlie, we have to run this in a new terminal:
 ```bash
 charlie$ btcd --simnet --txindex --rpcuser=username --rpcpass=password --miningaddr=<CHARLIE_ADDRESS>
 ```
-- Generate <number_of_blocks> blocks, so that Alice gets the reward:
+- Generate <number_of_blocks> blocks, so that Charlie gets the reward:
 ```bash
 charlie$ btcctl --simnet --rpcuser=username --rpcpass=password generate <number_of_blocks>
 ```
+<img src="images/" alt="">
+
 - Check that segwit is active
 ```bash
 charlie$ btcctl --simnet --rpcuser=username --rpcpass=password getblockchaininfo | grep -A 1 segwit
 ```
-- Check Alice’s wallet balance.
+<img src="images/" alt="">
+
+- Check Charlie's wallet balance.
 ```bash
 charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon walletbalance
 ```
+<img src="images/" alt="">
 
 ## Creating the P2P Network
 **Connect Alice to Bob:**
@@ -111,7 +123,7 @@ bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/
 ```
 2. **Connect Alice and Bob together:**
 ```bash
-bob$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon connect <BOB_PUBKEY>@localhost:10012
+alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon connect <BOB_PUBKEY>@localhost:10012
 ```
 <img src="images/AliceBobConnection.png" alt="">
 
@@ -125,11 +137,17 @@ alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simne
 ```bash
 bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon listpeers
 ```
+<img src="images/BobListpeers.png" alt="">
 
 **Connect Bob to Charlie:**
 ```bash
 charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon connect <BOB_PUBKEY>@localhost:10012
 ```
+- Check that Bob has added Charlie as a peer:
+```bash
+bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon listpeers
+```
+<img src="images/BobListpeersBC.png" alt="">
 
 ## Setting up Lightning Network
 - Open the Alice<–>Bob channel:
@@ -150,11 +168,18 @@ alice$ btcctl --simnet --rpcuser=udername --rpcpass=password generate 6
 ```
 <img src="images/AliceChannelList.png" alt="">
 
+```bash
+    bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon listchannels
+```
+<img src="images/BobChannelList.png" alt="">
+
 ## Single-hop payments: Alice to Bob
 - Bob will need to generate an invoice:
 ```bash
 bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon addinvoice --amt=10000
 ```
+<img src="images/BobInvoiceGeneration.png" alt="">
+
 - Send the payment from Alice to Bob:
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon sendpayment --pay_req=<encoded_invoice>
