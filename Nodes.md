@@ -204,21 +204,3 @@ alice$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simne
 
 
 
-
-
-## To avoid errors
-
-"[lncli] rpc error: code = Unknown desc = verification failed: signature mismatch after caveat verification"
-
-"[lncli] rpc error: code = Unknown desc = the RPC server is in the process of starting up, but not yet ready to accept calls"
-
-
-
-## .bashrc
-To avoid repetition, you can save the necessary information in the `.bashrc` file using aliases for each Lightning Network node:
-```bash
-alias lncli-alice="lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon"
-alias lncli-bob="lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon"
-alias lncli-charlie="lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon"
-```
-
