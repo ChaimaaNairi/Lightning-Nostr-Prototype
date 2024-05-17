@@ -9,7 +9,7 @@ Welcome to the Lightning-Nostr Prototype repository! This project showcases a pr
 - **Prototype demonstration:** Showcase the potential of Layer 2 solutions for addressing Bitcoin scalability challenges.
 
 
-Explore the project's documentation for detailed information:
+Explore the project's files for detailed information:
 - [Lightning Network ](https://github.com/ChaimaaNairi/Lightning-Nostr-Prototype/blob/main/LightningNetwork.md)
 - [Nostr Protocol](https://github.com/ChaimaaNairi/Lightning-Nostr-Prototype/blob/main/Nostr.md)
 - [Nodes](https://github.com/ChaimaaNairi/Lightning-Nostr-Prototype/blob/main/Nodes.md)
