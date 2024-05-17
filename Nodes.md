@@ -101,19 +101,19 @@ charlie$ btcd --simnet --txindex --rpcuser=username --rpcpass=password --mininga
 ```bash
 charlie$ btcctl --simnet --rpcuser=username --rpcpass=password generate <number_of_blocks>
 ```
-<img src="images/" alt="">
+<img src="images/CharlieGenerateBlock.png" alt="">
 
 - Check that segwit is active
 ```bash
 charlie$ btcctl --simnet --rpcuser=username --rpcpass=password getblockchaininfo | grep -A 1 segwit
 ```
-<img src="images/" alt="">
+<img src="images/CharlieGetChainInfo.png" alt="">
 
 - Check Charlie's wallet balance.
 ```bash
 charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon walletbalance
 ```
-<img src="images/" alt="">
+<img src="images/CharlieWalletBalance.png" alt="">
 
 ## Creating the P2P Network
 **Connect Alice to Bob:**
@@ -143,6 +143,14 @@ bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/
 ```bash
 charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon connect <BOB_PUBKEY>@localhost:10012
 ```
+<img src="CharlieBobConnection.png" alt="">
+
+- Check that Charlie has added Bob as a peer:
+```bash
+charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon listpeers
+```
+<img src="images/CharlieListpeers.png" alt="">
+
 - Check that Bob has added Charlie as a peer:
 ```bash
 bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon listpeers
