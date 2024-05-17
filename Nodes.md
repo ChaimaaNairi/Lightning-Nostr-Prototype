@@ -143,7 +143,7 @@ bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/
 ```bash
 charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/simnet/charlie.macaroon connect <BOB_PUBKEY>@localhost:10012
 ```
-<img src="CharlieBobConnection.png" alt="">
+<img src="images/CharlieBobConnection.png" alt="">
 
 - Check that Charlie has added Bob as a peer:
 ```bash
