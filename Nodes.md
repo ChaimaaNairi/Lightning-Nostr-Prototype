@@ -6,9 +6,11 @@ In this section, we explore the configuration and transactions of three Lightnin
 - **Single-hop payments**: Alice to Bob
 - **Multiple-hop payments**: Bob to Charlie
 
-![Lightning Network Transaction](image.png)
-***Image:** Illustration of single and multiple-hop payments in the Lightning Network.*
+<p align="center">
+  <img src="image.png" alt="Lightning Network Transaction" width="400" height="180"/>
+</p>
 
+***Image:** Illustration of single and multiple-hop payments in the Lightning Network.*
 
 After configuring the `lnd.conf` file, we can initiate our Lightning Network nodes using the following commands:
 ```bash
@@ -16,8 +18,6 @@ alice$ lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=loc
 bob$ lnd --rpclisten=localhost:10002 --listen=localhost:10012 --restlisten=localhost:8002
 charlie$ lnd --rpclisten=localhost:10003 --listen=localhost:10013 --restlisten=localhost:8003
 ```
-
-
 
 ## Alice Node
 - To create a wallet for Alice on her Lightning Network node:
@@ -28,18 +28,27 @@ alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simne
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon getinfo
 ```
+<img src="AliceGetInfo.png" alt="Alice getInfo">
+
 - To setup a Bitcoin address for Alice:
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon newaddress np2wkh
 ```
+<img src="AliceBitcoinAddress.png" alt="Alice's Bitcoin address">
+
 - for Funding Alice, we have to run this in a new terminal:
+setting Alice as the recipient of all mining rewards
 ```bash
 alice$ btcd --simnet --txindex --rpcuser=username --rpcpass=password --miningaddr=<ALICE_ADDRESS>
 ```
+<img src="AliceRunBtcd.png" alt="">
+
 - Generate <number_of_blocks> blocks, so that Alice gets the reward:
 ```bash
 alice$ btcctl --simnet --rpcuser=username --rpcpass=password generate <number_of_blocks>
 ```
+<img src="AliceGenerateBlock.png" alt="">
+
 - Check that segwit is active
 ```bash
 alice$ btcctl --simnet --rpcuser=username --rpcpass=password getblockchaininfo | grep -A 1 segwit
@@ -48,7 +57,7 @@ alice$ btcctl --simnet --rpcuser=username --rpcpass=password getblockchaininfo |
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon walletbalance
 ```
-
+<img src="AliceWalletBalance.png" alt="">
 
 ## Bob Node  
 - To create a wallet for Bob on her Lightning Network node:
