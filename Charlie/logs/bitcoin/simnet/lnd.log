@@ -1367,4 +1367,54 @@
 2024-05-17 11:44:55.644 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
 2024-05-17 11:44:55.644 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
 2024-05-17 11:44:55.645 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
-2024-05-17 11:44:55.648 [INF] LTND: Shutdown complete
+2024-05-17 11:44:55.648 [INF] LTND: Shutdown complete2024-05-18 12:21:16.429 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
+2024-05-18 12:21:16.448 [INF] LTND: Version: 0.18.0-beta.rc2 commit=tlv/v1.2.6, build=production, logging=default, debuglevel=info
+2024-05-18 12:21:16.448 [INF] LTND: Active chain: Bitcoin (network=simnet)
+2024-05-18 12:21:16.450 [INF] RPCS: RPC server listening on 127.0.0.1:10003
+2024-05-18 12:21:16.453 [INF] RPCS: gRPC proxy started at 127.0.0.1:8003
+2024-05-18 12:21:16.453 [INF] LTND: Opening the main database, this might take a few minutes...
+2024-05-18 12:21:16.453 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2024-05-18 12:21:16.469 [INF] LTND: Creating local graph and channel state DB instances
+2024-05-18 12:21:16.481 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2024-05-18 12:21:16.481 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2024-05-18 12:21:16.481 [INF] LTND: Database(s) now open (time_to_open=28.277ms)!
+2024-05-18 12:21:16.481 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-18 12:21:16.481 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2024-05-18 12:21:53.104 [ERR] RPCS: [/lnrpc.WalletUnlocker/UnlockWallet]: invalid passphrase for master public key
+2024-05-18 12:21:59.426 [INF] LNWL: Opened wallet
+2024-05-18 12:22:00.323 [INF] LNWL: The wallet has been unlocked without a time limit
+2024-05-18 12:22:00.342 [INF] CHRE: LightningWallet opened
+2024-05-18 12:22:00.354 [INF] HSWC: Cleaning circuits from disk for closed channels
+2024-05-18 12:22:00.354 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2024-05-18 12:22:00.354 [INF] HSWC: Restoring in-memory circuit state from disk
+2024-05-18 12:22:00.357 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2024-05-18 12:22:00.360 [INF] LNWL: Started rescan from block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf (height 606) for 2 addresses
+2024-05-18 12:22:00.367 [INF] LNWL: Catching up block hashes to height 606, this might take a while
+2024-05-18 12:22:00.371 [INF] LNWL: Done catching up block hashes
+2024-05-18 12:22:00.371 [INF] LNWL: Finished rescan for 2 addresses (synced to block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf, height 606)
+2024-05-18 12:22:00.373 [INF] LTND: Channel backup proxy channel notifier starting
+2024-05-18 12:22:00.373 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2024-05-18 12:22:00.374 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-18 12:22:00.375 [INF] LTND: Waiting for chain backend to finish sync, start_height=606
+2024-05-18 12:25:32.883 [INF] LNWL: Started rescan from block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf (height 606) for 2 addresses
+2024-05-18 12:25:32.892 [INF] LNWL: Catching up block hashes to height 606, this might take a while
+2024-05-18 12:25:32.897 [INF] LNWL: Done catching up block hashes
+2024-05-18 12:25:32.897 [INF] LNWL: Finished rescan for 2 addresses (synced to block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf, height 606)
+2024-05-18 12:26:23.643 [INF] LNWL: Started rescan from block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf (height 606) for 2 addresses
+2024-05-18 12:26:23.649 [INF] LNWL: Catching up block hashes to height 606, this might take a while
+2024-05-18 12:26:23.653 [INF] LNWL: Done catching up block hashes
+2024-05-18 12:26:23.653 [INF] LNWL: Finished rescan for 2 addresses (synced to block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf, height 606)
+2024-05-18 12:28:18.250 [INF] LNWL: Started rescan from block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf (height 606) for 2 addresses
+2024-05-18 12:28:18.257 [INF] LNWL: Catching up block hashes to height 606, this might take a while
+2024-05-18 12:28:18.259 [INF] LNWL: Done catching up block hashes
+2024-05-18 12:28:18.260 [INF] LNWL: Finished rescan for 2 addresses (synced to block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf, height 606)
+2024-05-18 12:31:03.015 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
+2024-05-18 12:32:58.733 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
+2024-05-18 12:37:36.112 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
+2024-05-18 12:44:52.401 [INF] LNWL: Started rescan from block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf (height 606) for 2 addresses
+2024-05-18 12:44:52.407 [INF] LNWL: Catching up block hashes to height 606, this might take a while
+2024-05-18 12:44:52.409 [INF] LNWL: Done catching up block hashes
+2024-05-18 12:44:52.409 [INF] LNWL: Finished rescan for 2 addresses (synced to block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf, height 606)
+2024-05-18 12:45:00.356 [INF] LTND: Received interrupt
+2024-05-18 12:45:00.357 [INF] LTND: Shutting down...
+2024-05-18 12:45:00.357 [INF] LTND: Gracefully shutting down.

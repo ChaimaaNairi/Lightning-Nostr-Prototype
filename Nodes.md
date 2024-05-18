@@ -258,16 +258,19 @@ We close channels to retrieve the funds that were locked within them and to ensu
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon listchannels
 ```
+**Note:** The `Channel point` consists of two numbers separated by a colon, which uniquely identifies the channel. The first number is `funding_txid` and the second number is `output_index`.
 
+
+- Close the Alice <--> Bob channel from Alice's side:
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon closechannel --funding_txid=<funding_txid> --output_index=<output_index>
 ```
-
+- Mine a block including the channel close transaction to close the channel:
 ```bash
 --simnet --rpcuser=username --rpcpass=password generate 1
 ```
 
-
+- Check that Bob's on-chain balance was credited with his settled amount from the channel, given that he previously had no on-chain Bitcoin:
 ```bash
 bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon walletbalance
 ```
