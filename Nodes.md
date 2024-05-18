@@ -241,7 +241,7 @@ charlie$ lncli --rpcserver=localhost:10003 --macaroonpath=data/chain/bitcoin/sim
 ```
 ```bash
 alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simnet/alice.macaroon sendpayment --pay_req=<encoded_invoice>
-```
+``` 
 <img src="" alt="">
 
 - Check that Charlie's channel has been credited with the payment amount:
