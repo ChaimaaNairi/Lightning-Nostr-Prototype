@@ -1887,3 +1887,34 @@
 2024-05-23 15:57:09.994 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
 2024-05-23 15:57:09.996 [INF] LTND: Shutdown complete
 
+2024-05-23 15:57:24.266 [WRN] LTND: Config 'bitcoin.active' is deprecated, please remove it
+2024-05-23 15:57:24.278 [INF] LTND: Version: 0.18.0-beta.rc2 commit=tlv/v1.2.6, build=production, logging=default, debuglevel=info
+2024-05-23 15:57:24.278 [INF] LTND: Active chain: Bitcoin (network=simnet)
+2024-05-23 15:57:24.279 [INF] RPCS: RPC server listening on 127.0.0.1:10001
+2024-05-23 15:57:24.282 [INF] RPCS: gRPC proxy started at 127.0.0.1:8001
+2024-05-23 15:57:24.282 [INF] LTND: Opening the main database, this might take a few minutes...
+2024-05-23 15:57:24.282 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2024-05-23 15:57:24.284 [INF] LTND: Creating local graph and channel state DB instances
+2024-05-23 15:57:24.291 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2024-05-23 15:57:24.291 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2024-05-23 15:57:24.291 [INF] LTND: Database(s) now open (time_to_open=8.8471ms)!
+2024-05-23 15:57:24.292 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-23 15:57:24.292 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2024-05-23 15:57:32.876 [INF] LNWL: Opened wallet
+2024-05-23 15:57:33.604 [INF] LNWL: The wallet has been unlocked without a time limit
+2024-05-23 15:57:33.614 [INF] CHRE: LightningWallet opened
+2024-05-23 15:57:33.626 [INF] HSWC: Cleaning circuits from disk for closed channels
+2024-05-23 15:57:33.626 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2024-05-23 15:57:33.626 [INF] HSWC: Restoring in-memory circuit state from disk
+2024-05-23 15:57:33.629 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2024-05-23 15:57:33.630 [INF] HSWC: Trimming open circuits for chan_id=501:1:0, start_htlc_id=1
+2024-05-23 15:57:33.641 [INF] LTND: Channel backup proxy channel notifier starting
+2024-05-23 15:57:33.641 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2024-05-23 15:57:33.641 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2024-05-23 15:57:33.642 [INF] LTND: Waiting for chain backend to finish sync, start_height=606
+2024-05-23 15:57:33.656 [INF] LNWL: Started rescan from block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf (height 606) for 6 addresses
+2024-05-23 15:57:33.660 [INF] LNWL: Catching up block hashes to height 606, this might take a while
+2024-05-23 15:57:33.663 [INF] LNWL: Done catching up block hashes
+2024-05-23 15:57:33.663 [INF] LNWL: Finished rescan for 6 addresses (synced to block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf, height 606)
+2024-05-23 16:12:47.043 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
+2024-05-23 17:29:13.870 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
