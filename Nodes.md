@@ -273,3 +273,4 @@ alice$ lncli --rpcserver=localhost:10001 --macaroonpath=data/chain/bitcoin/simne
 ```bash
 bob$ lncli --rpcserver=localhost:10002 --macaroonpath=data/chain/bitcoin/simnet/bob.macaroon walletbalance
 ```
+ 
