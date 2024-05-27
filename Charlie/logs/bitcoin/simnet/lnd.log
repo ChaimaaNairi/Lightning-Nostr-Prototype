@@ -1531,3 +1531,12 @@
 2024-05-23 15:59:06.241 [INF] LTND: Waiting for chain backend to finish sync, start_height=606
 2024-05-23 15:59:26.944 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
 2024-05-23 17:15:01.086 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
+2024-05-27 14:59:54.614 [INF] LTND: Received interrupt
+2024-05-27 14:59:54.615 [INF] LTND: Shutting down...
+2024-05-27 14:59:54.615 [INF] LTND: Gracefully shutting down.
+2024-05-27 14:59:54.787 [INF] RPCS: Stopping RPC Server
+2024-05-27 14:59:54.787 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2024-05-27 14:59:54.787 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2024-05-27 14:59:54.788 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2024-05-27 14:59:54.790 [INF] LTND: Shutdown complete
+

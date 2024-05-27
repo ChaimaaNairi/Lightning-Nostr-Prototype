@@ -2108,3 +2108,11 @@
 2024-05-23 15:58:25.572 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
 2024-05-23 15:58:25.572 [INF] LTND: We're not running within systemd or the service type is not 'notify'
 2024-05-23 15:58:25.573 [INF] LTND: Waiting for chain backend to finish sync, start_height=606
+2024-05-27 14:59:51.582 [INF] LTND: Received interrupt
+2024-05-27 14:59:51.582 [INF] LTND: Shutting down...
+2024-05-27 14:59:51.582 [INF] LTND: Gracefully shutting down.
+2024-05-27 14:59:51.619 [INF] RPCS: Stopping RPC Server
+2024-05-27 14:59:51.619 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2024-05-27 14:59:51.619 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2024-05-27 14:59:51.619 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2024-05-27 14:59:51.620 [INF] LTND: Shutdown complete

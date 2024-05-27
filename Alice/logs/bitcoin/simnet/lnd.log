@@ -1918,3 +1918,11 @@
 2024-05-23 15:57:33.663 [INF] LNWL: Finished rescan for 6 addresses (synced to block 3245dc25038d43b8d15daf6703b6bed52b92cc43fac1ede010464deb27b911cf, height 606)
 2024-05-23 16:12:47.043 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
 2024-05-23 17:29:13.870 [ERR] RPCS: [/lnrpc.Lightning/ConnectPeer]: server is still in the process of starting
+2024-05-27 14:59:47.048 [INF] LTND: Received interrupt
+2024-05-27 14:59:47.049 [INF] LTND: Shutting down...
+2024-05-27 14:59:47.049 [INF] LTND: Gracefully shutting down.
+2024-05-27 14:59:47.621 [INF] RPCS: Stopping RPC Server
+2024-05-27 14:59:47.621 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2024-05-27 14:59:47.621 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2024-05-27 14:59:47.621 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2024-05-27 14:59:47.626 [INF] LTND: Shutdown complete
