@@ -4,8 +4,7 @@ In this section, we explore the configuration and transactions of three Lightnin
 
 **Transactions Demonstrated:**
 - **Single-hop payments**: Alice to Bob
-- **Multiple-hop payments**: Bob to Charlie
-
+- **Multiple-hop payments**: Alice to Charlie via Bob
 <p align="center">
   <img src="images/image.png" alt="Lightning Network Transaction" width="400" height="180"/>
 </p>
