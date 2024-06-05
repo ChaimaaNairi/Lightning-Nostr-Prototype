@@ -1,7 +1,3 @@
 
 
-# Ignore the images folder and its contents
-images/
 
-# Ignore go-nostr
-go-nostr/
