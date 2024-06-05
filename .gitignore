@@ -15,7 +15,9 @@
 # production
 /build
 
-/images
+./images
+./go-nostr
+
 # misc
 .DS_Store
 *.pem
