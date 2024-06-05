@@ -19,5 +19,16 @@ The Nostr Protocol operates by establishing a network of relays that facilitate 
 5. **Privacy**: Users' interactions on the Nostr network are private and secure, as messages are distributed in a peer-to-peer fashion without passing through centralized servers.
 
 ## Nostr Prototype  
-[](https://www.thrillerbitcoin.com/nostr-terminal/)
+https://github.com/nbd-wtf/go-nostr
+
+
+
+
+Charlie:
+
+![alt text](<Capture d’écran .png>)
+
+
+![alt text](<Capture d’écran -1.png>)
+
 
