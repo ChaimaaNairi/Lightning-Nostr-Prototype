@@ -23,10 +23,6 @@ https://github.com/nbd-wtf/go-nostr
 
 
 
--------------
-
-
-
 ------------------
 
 - **sk:** stands for the generated private key.
@@ -39,10 +35,9 @@ https://github.com/nbd-wtf/go-nostr
 
 
 ## Alice client:
+<img src="images/Capture d’écran -2.png" alt="">
 
-![alt text](<Capture d’écran -2.png>)
-
-![alt text](<Capture d’écran -3.png>)
+<img src="images/Capture d’écran -3.png" alt="">
 
 - **Code:** [generate_keys.go ](https://github.com/ChaimaaNairi/Lightning-Nostr-Prototype/blob/main/alice/go-nostr/cmd/generate_keys.go)
 
@@ -51,10 +46,10 @@ https://github.com/nbd-wtf/go-nostr
 
 ## Bob client:
 
-![alt text](<Capture d’écran -4.png>)
+<img src="images/Capture d’écran -4.png" alt="">
 
 
-![alt text](<Capture d’écran -5.png>)
+<img src="images/Capture d’écran -5.png" alt="">
 
 - **Code:** [generate_keys.go ](https://github.com/ChaimaaNairi/Lightning-Nostr-Prototype/blob/main/bob/go-nostr/cmd/generate_keys.go)
 
@@ -63,17 +58,17 @@ https://github.com/nbd-wtf/go-nostr
 
 ## Charlie client:
 
-![alt text](<Capture d’écran .png>)
+<img src="images/Capture d’écran .png" alt="">
 
 
-![alt text](<Capture d’écran -1.png>)
+<img src="images/Capture d’écran -1.png" alt="">
 
 - **Code:** [generate_keys.go ](https://github.com/ChaimaaNairi/Lightning-Nostr-Prototype/blob/main/charlie/go-nostr/cmd/generate_keys.go)
 
 
 ## single relay
 
-![alt text](<Capture d’écran -6.png>)
+<img src="images/Capture d’écran -6.png" alt="">
 
 
 - **Code:** [relay_server.go ](https://github.com/ChaimaaNairi/Lightning-Nostr-Prototype/blob/main/go-nostr/cmd/relay_server.go)
