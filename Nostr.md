@@ -91,7 +91,7 @@ Charlie$ go run generate_keys.go
 <img src="images/Capture d’écran -1.png" alt="">
 
 - **Code:** [generate_keys.go ](https://github.com/ChaimaaNairi/Lightning-Nostr-Prototype/blob/main/charlie/go-nostr/cmd/generate_keys.go)
-
+ 
 
 ## 3 Relay
 - In our setup, each node (Alice, Bob, and Charlie) has its own relay server implemented using the Nostr protocol. Therefore, we have three separate relay servers running. This means each node manages its connections, message handling, and WebSocket communications independently.
@@ -110,5 +110,6 @@ Charlie$ go run generate_keys.go
  - **Host:** localhost:8003
  - Implementation: Defined in [relay_server.go ](https://github.com/ChaimaaNairi/Lightning-Nostr-Prototype/blob/main/go-nostr/cmd/relay_server.go) in `go-nostr/cmd/relay_server.go`and running as part of Charlie's setup.
 
+- 
 
 
