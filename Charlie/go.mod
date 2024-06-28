@@ -27,4 +27,3 @@ require (
 )
 
 replace github.com/ChaimaaNairi/go-nostr => ../go-nostr
-
