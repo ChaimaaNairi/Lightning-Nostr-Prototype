@@ -49,6 +49,51 @@ func sendMessage(conn *websocket.Conn, message Message) {
 	}
 }
 
+func loadKeys(keysFile string) (string, string, error) {
+	file, err := os.Open(keysFile)
+	if err != nil {
+		return "", "", err
+	}
+	defer file.Close()
+
+	var keys struct {
+		PrivateKey string `json:"privateKey"`
+		PublicKey  string `json:"publicKey"`
+	}
+	if err := json.NewDecoder(file).Decode(&keys); err != nil {
+		return "", "", err
+	}
+
+	return keys.PublicKey, keys.PrivateKey, nil
+}
+
+func generateNewKeys() (string, string) {
+	privateKey := nostr.GeneratePrivateKey()
+	publicKey, _ := nostr.GetPublicKey(privateKey)
+	return publicKey, privateKey
+}
+
+func saveKeys(publicKey, privateKey, keysFile string) error {
+	keyData := struct {
+		PrivateKey string `json:"privateKey"`
+		PublicKey  string `json:"publicKey"`
+	}{
+		PublicKey:  publicKey,
+		PrivateKey: privateKey,
+	}
+
+	jsonData, err := json.MarshalIndent(keyData, "", "    ")
+	if err != nil {
+		return err
+	}
+
+	if err := os.WriteFile(keysFile, jsonData, 0644); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func main() {
 	keysFile := "key_alice.json"
 	publicKey, privateKey, err := loadKeys(keysFile)
@@ -68,14 +113,15 @@ func main() {
 		"b4be216068a9df082bd9b2729043a4e3c7d0357f12b862a04c61504bf45f25dc": "Charlie",
 	}
 
+	// WebSocket connection to relay server
 	relayServer := "localhost:8000"
-
 	conn, _, err := websocket.DefaultDialer.Dial("ws://"+relayServer+"/ws", nil)
 	if err != nil {
 		log.Fatal("Error connecting to relay server:", err)
 	}
 	defer conn.Close()
 
+	// Start receiving messages from relay server
 	go func() {
 		for {
 			_, msg, err := conn.ReadMessage()
@@ -92,11 +138,12 @@ func main() {
 
 			if message.Recipient == publicKey {
 				logMessage(message, "messages_received.json")
-				fmt.Printf("Message received: %s from %s to %s\n", message.Content, nameMap[message.Sender], nameMap[message.Recipient])
+				fmt.Printf("Message received: %s from %s to %s\n", message.Content, message.Sender, "Alice")
 			}
 		}
 	}()
 
+	// Start sending messages to other nodes via relay server
 	reader := bufio.NewReader(os.Stdin)
 
 	fmt.Println("Enter messages to send. Type 'exit' to quit.")
@@ -112,13 +159,6 @@ func main() {
 		recipientPublicKey, _ := reader.ReadString('\n')
 		recipientPublicKey = strings.TrimSpace(recipientPublicKey)
 
-		if _, ok := nameMap[recipientPublicKey]; !ok {
-			fmt.Print("Enter the name of recipient: ")
-			recipientName, _ := reader.ReadString('\n')
-			recipientName = strings.TrimSpace(recipientName)
-			nameMap[recipientPublicKey] = recipientName
-		}
-
 		message := Message{
 			ID:        fmt.Sprintf("%d", time.Now().UnixNano()),
 			Sender:    publicKey,
@@ -129,9 +169,10 @@ func main() {
 
 		sendMessage(conn, message)
 		logMessage(message, "messages_sent.json")
-		fmt.Printf("Message sent: %s from %s to %s\n", message.Content, nameMap[message.Sender], nameMap[message.Recipient])
+		fmt.Printf("Message sent: '%s' from %s to %s\n", message.Content, nameMap[message.Sender], nameMap[message.Recipient])
 	}
 
+	// Gracefully shutdown on interrupt signal (Ctrl+C)
 	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, os.Interrupt)
 	<-quit
