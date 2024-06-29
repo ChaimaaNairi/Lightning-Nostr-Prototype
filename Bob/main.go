@@ -107,6 +107,12 @@ func main() {
 	fmt.Println("Bob's private key (sk):", privateKey)
 	fmt.Println("Bob's public key (pk):", publicKey)
 
+	nameMap := map[string]string{
+		publicKey: "Bob",
+		"72b76dd37a7fa2b9cf48081940fac13deb0d10858dd9887c7e8e0726867dbe6c": "Alice",
+		"b4be216068a9df082bd9b2729043a4e3c7d0357f12b862a04c61504bf45f25dc": "Charlie",
+	}
+
 	// WebSocket connection to relay server
 	relayServer := "localhost:8000"
 	conn, _, err := websocket.DefaultDialer.Dial("ws://"+relayServer+"/ws", nil)
@@ -163,7 +169,7 @@ func main() {
 
 		sendMessage(conn, message)
 		logMessage(message, "messages_sent.json")
-		fmt.Printf("Message sent: %s from Bob to %s\n", message.Content, recipientPublicKey)
+		fmt.Printf("Message sent: '%s' from %s to %s\n", message.Content, nameMap[message.Sender], nameMap[message.Recipient])
 	}
 
 	// Gracefully shutdown on interrupt signal (Ctrl+C)
