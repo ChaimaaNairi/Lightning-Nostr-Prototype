@@ -76,7 +76,7 @@ To ensure secure authentication and messaging within the Nostr Protocol network,
 Within the forked `go-nostr` repository, we've added a custom relay server implementation to facilitate decentralized messaging across nodes.
 - In the `cmd` folder of the repository, locate [relay_server.go](https://github.com/ChaimaaNairi/go-nostr/blob/master/cmd/relay_server.go)
 
-     ```bash
+     ```bash 
         go run cmd/relay_server.go
      ```
 <img src="images/relayserver.png">
