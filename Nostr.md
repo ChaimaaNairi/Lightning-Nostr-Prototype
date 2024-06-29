@@ -98,3 +98,14 @@ Once the relay server is set up, the next step involves integrating nodes (Alice
 **From Bob to Charlie**
 <img src="images/bobtocharlieNostr.png">
 
+### 5.Offline Message Storage with IPFS Integration
+To ensure nodes (Alice, Bob, and Charlie) can receive messages even when offline, we integrate IPFS (InterPlanetary File System) for decentralized storage and retrieval of messages within the Nostr Protocol network.
+
+1. IPFS Integration
+- Implemented IPFS client functionality using `go-ipfs-api` for seamless interaction with the IPFS network.
+- Ensured connectivity to the IPFS daemon and verified operational status.
+
+[ipfs_integration.go](https://github.com/ChaimaaNairi/go-nostr/blob/master/cmd/ipfs_integration.go)
+
+
+
